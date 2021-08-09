@@ -1,0 +1,28 @@
+/*==================== SERVICES-PAGE HEADER ====================*/
+.top_services__list__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.top_service__data {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+.top_service__title,
+.top_service__img {
+    display: block;
+}
+
+.top_service__title {
+    font-family: var(--header-font);
+    font-weight: var(--font-medium);
+    font-size: var(--h4-font-size);
+    margin-bottom: 14px;
+    min-height: 48px;
+}
+.top_service__img {
+    height: 261px;
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

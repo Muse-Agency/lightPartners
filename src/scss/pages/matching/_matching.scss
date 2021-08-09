@@ -1,0 +1,102 @@
+/*==================== MATCHING PAGE ====================*/
+.matching__content {
+    grid-template-columns: 1fr 4fr;
+}
+
+.matching__header {
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+}
+
+.matching__header_sticky {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 15px 0;
+    z-index: var(--z-fixed);
+    transition: 0.5s;
+}
+
+.show-matching-sticky {
+    top: 0;
+}
+
+.show-matching-sticky .matching__product-remove-link,
+.show-matching-sticky .matching__product-img {
+    display: none;
+}
+.show-matching-sticky .matching__header {
+    height: auto;
+}
+.matching__header_sticky-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+}
+
+.matching__header_link + .matching__header_link {
+    margin-top: 10px;
+}
+.matching__action_link {
+    font-size: var(--text-style-4-font-size);
+}
+
+.matching__attributes {
+    display: grid;
+    row-gap: 8px;
+    margin-top: 40px;
+}
+
+.matching__titles .matching__attribute {
+    font-weight: var(--font-medium);
+}
+
+.matching__products {
+    width: 100%;
+}
+
+.matching__header {
+    position: relative;
+}
+
+.matching__product-remove-link {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.matching__product-img {
+    object-fit: cover;
+    width: 100%;
+    object-position: 80%;
+    margin-bottom: 21px;
+}
+
+.matching__product-title {
+    font-size: var(--h4-font-size);
+    font-weight: var(--font-bold);
+}
+.matching__product-price {
+    margin-top: 5px;
+}
+.matching__product-price--current {
+    font-family: var(--header-font);
+    font-weight: var(--font-bold);
+}
+
+.matching__product-price--old {
+    font-size: 10px;
+    color: var(--grey-color);
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+
+.matching__products .matching__attributes {
+    border-left: 1px var(--grey-color) solid;
+    padding-left: 10px;
+}

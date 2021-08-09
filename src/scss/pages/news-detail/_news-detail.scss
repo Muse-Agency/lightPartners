@@ -1,0 +1,21 @@
+/*==================== NEWS-DETAIL PAGE ====================*/
+.news_detail__date {
+    font-size: var(--text-style-4-font-size);
+    margin-top: 25px;
+}
+
+.news_detail__photos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: flex-end;
+}
+.news_detail__photo-description {
+    margin-top: 10px;
+    color: var(--grey-color);
+    font-size: var(--text-style-4-font-size);
+}
+.news_detail__text {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    font-size: var(--text-style-1-font-size);
+}

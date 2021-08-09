@@ -1,0 +1,40 @@
+/*==================== HOME BRANDS ====================*/
+.brands__container {
+    margin-bottom: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    row-gap: 20px;
+}
+.brand__link,
+.brand__link-img-hover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.brand__link {
+    display: block;
+    position: relative;
+    width: 215px;
+    height: 130px;
+    border: 1px var(--black-color) solid;
+    overflow: hidden;
+}
+.brand__link-img-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0;
+    background-color: var(--black-color);
+}
+
+.brand__link:hover {
+    opacity: 1;
+}
+.brand__link:hover .brand__link-img-hover {
+    opacity: 1;
+}

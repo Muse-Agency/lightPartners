@@ -1,0 +1,24 @@
+/*==================== PAGINATION ====================*/
+.pagination--lp {
+    margin-top: 30px;
+}
+.pagination__list {
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+.pagination__link,
+.pagination__current {
+    font-size: var(--text-style-4-font-size);
+}
+
+.pagination__link {
+    cursor: pointer;
+}
+.pagination__current {
+    color: var(--grey-color);
+}
+.pagination__link-icon {
+    font-size: 24px;
+    line-height: 1;
+}

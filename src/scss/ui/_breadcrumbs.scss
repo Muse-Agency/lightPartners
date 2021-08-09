@@ -1,0 +1,29 @@
+/*==================== BREADCRUMBS ====================*/
+.breadcrumbs {
+    margin-bottom: 60px;
+}
+.breadcrumbs__nav {
+    display: flex;
+}
+.breadcrumb__item + .breadcrumb__item {
+    margin-left: 5px;
+    padding-left: 5px;
+    position: relative;
+}
+.breadcrumb__item + .breadcrumb__item::before {
+    content: "|";
+    display: inline-block;
+    position: absolute;
+    left: -3.5px;
+    top: 1px;
+}
+
+.breadcrumb__link,
+.breadcrumb__current,
+.breadcrumb__item + .breadcrumb__item::before {
+    font-size: var(--text-style-3-font-size);
+}
+.breadcrumb__link,
+.breadcrumb__item + .breadcrumb__item::before {
+    color: var(--grey-color);
+}

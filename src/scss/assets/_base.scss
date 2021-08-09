@@ -1,0 +1,82 @@
+/*==================== BASE ====================*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--black-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--header-font);
+    font-weight: var(--font-medium);
+}
+.h2 {
+    font-size: var(--h2-font-size);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+a:hover {
+    text-decoration: none;
+}
+
+.clickable-element {
+    color: var(--white-color);
+}
+
+.clickable-element:hover {
+    color: #d0d0d0;
+}
+.clickable-element:active {
+    border-bottom: solid 1px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+button {
+    background: none;
+    border: none;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+input[type="text"],
+input[type="email"] {
+    font-size: var(--normal-font-size);
+    font-family: var(--body-font);
+    padding: 0 10px;
+    outline: none;
+}

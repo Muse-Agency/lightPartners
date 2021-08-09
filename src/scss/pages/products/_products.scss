@@ -1,0 +1,108 @@
+/*==================== CATALOG PRODUCTS LIST ====================*/
+.product_card {
+    padding-top: 39px;
+}
+.product_card__images {
+    width: 290px;
+    margin-bottom: 20px;
+}
+.product_card__img {
+    width: 290px;
+    height: 240px;
+    display: grid;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    gap: 9px;
+    grid-auto-flow: column;
+}
+.product_card__images-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.product_card__images-button {
+    height: 5px;
+    background-color: var(--semi-dark-grey-color);
+    opacity: 0.1;
+    transition: 0.3s;
+}
+.product_card__images-section--active .product_card__images-button,
+.product_card__images-section:hover .product_card__images-button {
+    opacity: 1;
+}
+/* .product_card__slider-buttons {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 9px;
+}
+.product_card__slider-button {
+    background: none;
+    border: none;
+    height: 5px;
+    background-color: var(--grey-color);
+    cursor: pointer;
+}
+.product_card__slider-button--active {
+    background-color: var(--semi-dark-grey-color);
+} */
+
+.product_card__title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 20px;
+}
+.product_card__attributes {
+    gap: 10px;
+}
+.product_card__attribute,
+.product_card__cart-line {
+    font-family: var(--header-font);
+    justify-content: space-between;
+}
+
+.product_card__cart-info {
+    margin-top: 26px;
+}
+
+.product_card__cart-info {
+    gap: 5px;
+}
+
+.product_card__status,
+.product_card__brand {
+    font-weight: var(--font-medium);
+}
+.product_card__status--green {
+    color: var(--green-color);
+}
+.product_card__price-current {
+    font-weight: var(--font-bold);
+}
+.product_card__price-old {
+    font-size: var(--text-style-3-font-size);
+    color: var(--grey-color);
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+.product_card__labels {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    justify-content: space-between;
+}
+.product_card__label {
+    align-items: center;
+}
+.product_card__label-icon {
+    margin-right: 5px;
+}
+.product_card__label-text {
+    font-size: 10px;
+}
+
+.product_card--banner-image {
+    background-position: center center;
+    background: no-repeat;
+    background-size: cover;
+    grid-column: 3 / 5;
+}

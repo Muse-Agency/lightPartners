@@ -1,0 +1,58 @@
+/*==================== FOOTER ====================*/
+.footer {
+    margin-top: 200px;
+    background-color: var(--bg-dark-color);
+    padding: 60px 0;
+}
+.footer,
+.footer a {
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.footer__content {
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 40px;
+}
+
+.footer__links {
+    width: 400px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 40px;
+    row-gap: 20px;
+    justify-self: left;
+}
+.footer__nav-link {
+    font-family: var(--header-font);
+    font-size: 20px;
+    font-weight: var(--font-medium);
+}
+
+.footer__title {
+    font-size: 16px;
+    font-family: var(--header-font);
+    color: var(--grey-color);
+    margin-bottom: 5px;
+}
+
+.social__links {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 5px;
+    width: 335px;
+}
+
+.footer__contacts {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__politics-link {
+    font-family: var(--header-font);
+}

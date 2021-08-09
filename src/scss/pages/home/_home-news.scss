@@ -1,0 +1,59 @@
+/*==================== HOME NEWS ====================*/
+.news__container {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 45px;
+}
+.news__image {
+    height: 365px;
+    display: block;
+    margin-bottom: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.news__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 25px;
+    position: relative;
+}
+.news__title::before {
+    content: "";
+    width: 71px;
+    height: 1px;
+    background-color: var(--black-color);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.news__preview {
+    font-size: var(--text-style-4-font-size);
+    margin-bottom: 15px;
+}
+.news__date {
+    font-family: var(--header-font);
+    font-weight: var(--font-bold);
+}
+
+.news__subscribe {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: var(--black-color);
+    height: 365px;
+    padding: 30px;
+}
+.subscribe__form.subscribe__form--in-list .subscribe__form-title {
+    font-size: 34px;
+}
+.subscribe__form.subscribe__form--in-list .subscribe__form-subtitle {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.subscribe__form.subscribe__form--in-list .subscribe__buttons {
+    margin-top: 25px;
+}

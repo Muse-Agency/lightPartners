@@ -1,0 +1,28 @@
+/*==================== SERVICES-PAGE ADDITIONALS ====================*/
+.additionals__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+}
+.additional__img_link {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icon-bg-color);
+    margin-right: 20px;
+    border-radius: 50%;
+}
+.additional__title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 20px;
+}
+.additional__subtitle {
+    font-size: var(--text-style-5-font-size);
+}
+
+.additionals__description {
+    margin-top: 50px;
+    font-size: var(--text-style-1-font-size);
+}

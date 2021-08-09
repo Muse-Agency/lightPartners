@@ -1,0 +1,21 @@
+/*==================== 404 PAGE ====================*/
+.body__404 {
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+.section__404 {
+    height: 100vh;
+    background: url("../images/404/bg-404.png") center center no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.section__404-title {
+    font-family: var(--header-font);
+    font-size: 100px;
+    font-weight: var(--font-bold);
+    margin-bottom: 20px;
+}
+.section_404-buttons {
+    text-align: center;
+}

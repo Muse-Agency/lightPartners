@@ -1,0 +1,128 @@
+/*==================== CARD-PRODUCT-PAGE ====================*/
+.card_product__main {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    align-self: start;
+}
+.card_product__images {
+    background-color: var(--white-color);
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.card_product__image-link {
+    width: 99px;
+    height: 113px;
+    background-position: center center;
+    background: no-repeat;
+    background-size: cover;
+    display: block;
+}
+.card_product__image-link--main {
+    width: auto;
+    height: auto;
+    grid-column: 2 / 7;
+    grid-row: 1 / 5;
+    background-position: center center;
+    background: no-repeat;
+    background-size: cover;
+    min-height: 480px;
+}
+
+.card_product__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.card_product__actions {
+    gap: 20px;
+}
+.card_product__action {
+    align-items: center;
+    cursor: pointer;
+}
+.card_product__action-icon {
+    margin-right: 10px;
+}
+.card_product__action-title {
+    font-family: var(--header-font);
+    font-size: 12px;
+}
+
+.card_product__price {
+    margin-top: 14px;
+    align-items: flex-end;
+}
+.card_product__price--current {
+    font-size: 34px;
+    font-weight: var(--font-bold);
+    font-family: var(--header-font);
+    line-height: 1;
+}
+.card_product__price--old {
+    color: var(--grey-color);
+    text-decoration: line-through;
+    margin-left: 5px;
+    font-size: var(--text-style-4-font-size);
+}
+.card_product__status--green {
+    color: var(--green-color);
+    font-weight: var(--font-medium);
+}
+
+.card_product__attributes {
+    margin-top: 20px;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+
+.card_product__attribute {
+    font-size: var(--text-style-3-font-size);
+}
+.card_product__attribute-value {
+    margin-left: 5px;
+}
+
+.card_product__brand_article {
+    margin-top: 22px;
+    align-items: center;
+}
+.card_product__brand {
+    margin-right: 15px;
+}
+.card_product__article {
+    font-family: var(--header-font);
+    font-size: 12px;
+}
+
+.card_product__cart {
+    margin-top: 30px;
+}
+.card_product__description {
+    margin-top: 60px;
+    font-size: var(--text-style-4-font-size);
+    width: 80%;
+}
+.card_product__documents {
+    margin-top: 100px;
+    column-gap: 100px;
+}
+.card_product__document-title {
+    margin-bottom: 26px;
+    font-size: var(--text-style-1-font-size);
+    font-weight: var(--font-bold);
+}
+.card_product__document-list {
+    row-gap: 5px;
+}
+.card_product__document-link {
+    font-size: var(--text-style-4-font-size);
+    align-items: center;
+}
+.card_product__document-link img {
+    margin-left: 15px;
+}

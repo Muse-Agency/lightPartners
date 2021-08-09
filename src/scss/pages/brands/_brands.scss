@@ -1,0 +1,10 @@
+/*==================== BRANDS PAGE ====================*/
+.brands__group + .brands__group {
+    margin-top: 50px;
+}
+.brands__group-title {
+    font-weight: var(--font-bold);
+    font-family: var(--header-font);
+    font-size: var(--h3-font-size);
+    margin-bottom: 30px;
+}

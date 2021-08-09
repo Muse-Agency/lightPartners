@@ -1,0 +1,10 @@
+/*==================== COMPANY PAGE ====================*/
+.company__content {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 138px;
+    row-gap: 60px;
+    font-size: var(--text-style-1-font-size);
+}
+.company__content p + p {
+    margin-top: 20px;
+}

@@ -1,0 +1,47 @@
+/*==================== HOME PRODUCTS ====================*/
+.products__container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 26px;
+}
+.product__content {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 15px;
+}
+.product__title,
+.product__img {
+    display: block;
+}
+.product__title {
+    font-family: var(--header-font);
+    font-weight: var(--font-medium);
+    font-size: var(--text-style-4-font-size);
+    margin-bottom: 35px;
+}
+.product__img {
+    width: 250px;
+    height: 260px;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.product__label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0px;
+    height: 0px;
+    border-bottom: 90px solid var(--label-orange-color);
+    border-right: 100px solid transparent;
+}
+.product__label-content {
+    position: absolute;
+    color: var(--white-color);
+    font-weight: var(--font-bold);
+    font-size: 12px;
+    display: block;
+    left: 16px;
+    bottom: -75px;
+}

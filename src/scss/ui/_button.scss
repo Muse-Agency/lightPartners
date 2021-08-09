@@ -1,0 +1,61 @@
+/*==================== BUTTONS ====================*/
+.button {
+    display: inline-block;
+    padding: 14.5px 18px;
+    line-height: 1;
+    border: none;
+    background: none;
+    font-family: var(--body-font);
+    font-size: 20px;
+    transition: 0.3s;
+    min-width: 215px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    opacity: 0.9;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 24px;
+    span {
+        line-height: 27px;
+        padding-bottom: 4px;
+    }
+}
+
+.button--red {
+    background-color: var(--button-red-color);
+    color: #fff;
+}
+.button--red svg {
+    fill: #fff;
+}
+
+.button--orange {
+    background-color: var(--button-orange-color);
+    color: #fff;
+}
+
+.button--slider-hover {
+    box-shadow: inset 0 0 0 0 #fff;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.button--slider-hover:hover {
+    opacity: 1;
+    color: var(--black-color);
+    box-shadow: inset 400px 0 0 0 #fff;
+}
+.button--slider-hover:hover svg {
+    fill: var(--black-color);
+}
+.button--transparent {
+    border: 1px solid #fff;
+    color: #fff;
+}

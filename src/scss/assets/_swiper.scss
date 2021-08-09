@@ -1,0 +1,21 @@
+/*==================== SWIPER ====================*/
+.swiper-button-prev,
+.swiper-button-next {
+    top: 85px;
+    cursor: pointer;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    content: "";
+}
+.swiper-matching-icon {
+    font-size: 3rem;
+    color: var(--black-color);
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+.swiper-button-next {
+    right: 0;
+}

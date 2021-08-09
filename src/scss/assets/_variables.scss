@@ -1,0 +1,67 @@
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 120px;
+
+    /*========== Changing Colors ==========*/
+    --bg-dark-color: #161616;
+    --bg-light-color: #fff;
+    --label-orange-color: #f39629;
+    --label-azure-color: #00848c;
+    --label-white-color: #fff;
+    --icon-bg-color: #052555;
+    --button-red-color: #bd1626;
+    --button-orange-color: #f39629;
+
+    /*========== Colors ==========*/
+    --black-color: #101010;
+    --white-color: #fff;
+    --blue-color: #2e3f7f;
+    --ligth-blue-color: #4970d2;
+    --bg-color: #e5e5e5;
+    --bg-black-color: #4a586e;
+    --grey-color: #afafaf;
+    --blackout-color: rgba(0, 0, 0, 0.5);
+    --form-bg-color: #eaeaea;
+    --red-color: #ff0000;
+    --green-color: #079015;
+    --semi-dark-grey-color: #7c7c7c;
+    --body-color: #fff;
+
+    /*========== Font and typography ==========*/
+    --body-font: "Open Sans", sans-serif;
+    --header-font: "Montserrat", sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: ;
+    --h1-font-size: 56px;
+    --h2-font-size: 44px;
+    --h4-font-size: 20px;
+    --h3-font-size: 28px;
+    --normal-font-size: 16px;
+    --text-style-1-font-size: 24px;
+    --text-style-2-font-size: 16px;
+    --text-style-3-font-size: 14px;
+    --text-style-4-font-size: 20px;
+    --text-style-5-font-size: 18px;
+    --text-style-6-font-size: 48px;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-bold: 700;
+
+    /*========== Margenes Bottom ==========*/
+    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+    --mb-before-list-card: 80px;
+    --mb-after-blocks: 170px;
+    --mb-0-75: ;
+    --mb-1: ;
+    --mb-1-5: ;
+    --mb-2: ;
+    --mb-2-5: ;
+    --mb-3: ;
+
+    /*========== z index ==========*/
+    --z-tooltip: ;
+    --z-fixed: 100;
+    --z-modal: 9999;
+}

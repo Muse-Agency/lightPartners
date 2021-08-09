@@ -1,0 +1,53 @@
+/*==================== SERVICES-PAGE DIRECTIONS ====================*/
+.directions__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.direction__data {
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    order: 0;
+}
+
+.direction__title {
+    font-size: var(--h4-font-size);
+    margin-bottom: 14px;
+}
+.direction__img {
+    height: 415px;
+    display: block;
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.direction__categories {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--label-white-color);
+    padding: 25px 0;
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+.direction__sections {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 15px;
+}
+.direction__link {
+    font-family: var(--header-font);
+    font-size: var(--text-style-3-font-size);
+}
+.direction__data:hover .direction__categories {
+    transform: translateY(0);
+}
+
+.direction__data.projects__consultation--form {
+    order: 6;
+}

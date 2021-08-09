@@ -1,0 +1,21 @@
+/*==================== SERVICES-PAGE CONSULTATION ====================*/
+.consultation__wrapper {
+    background-color: var(--white-color);
+    padding: 44px 98px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.consultation__container {
+    grid-template-columns: 1fr 2fr;
+    gap: 150px;
+    align-items: center;
+}
+
+.consultation_form__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 20px;
+}
+
+.consultation__description {
+    font-size: var(--text-style-1-font-size);
+}

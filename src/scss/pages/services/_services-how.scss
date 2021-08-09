@@ -1,0 +1,46 @@
+/*==================== SERVICES-PAGE HOW-CONTENT ====================*/
+.how_content__data + .how_content__data {
+    margin-top: 50px;
+}
+
+.how_content__header {
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.how_content__title {
+    font-size: var(--h2-font-size);
+    line-height: 1.2;
+}
+.how_content__arrow {
+    padding-left: 120px;
+}
+.how_content__arrow-img {
+    width: 29px;
+    height: 29px;
+}
+
+.how_content__content {
+    margin-top: 50px;
+}
+
+.how_content__bg {
+    height: 600px;
+    align-items: flex-end;
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 25px 120px;
+}
+.how_content__description {
+    grid-template-columns: 4fr 1fr;
+    gap: 60px;
+    align-items: flex-end;
+}
+.how_content__text {
+    font-size: var(--text-style-1-font-size);
+    color: var(--white-color);
+}
+.how_content__text p + p {
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+/*==================== CONTACTS PAGE ====================*/
+.contacts__section {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.contacts__content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 118px;
+}
+
+.contacts__info {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    row-gap: 50px;
+}
+
+.contacts__info-item:nth-child(3) {
+    grid-column: 1 / 3;
+}
+.contacts__info-title {
+    font-size: var(--text-style-4-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: 25px;
+    display: inline-block;
+    border-bottom: 1px solid;
+}
+
+.contacts__info-content {
+    font-size: var(--text-style-5-font-size);
+}
+
+.contacts__info-content-title {
+    font-size: var(--normal-font-size);
+}
+
+.contacts__links-item + .contacts__links-item {
+    margin-top: 12px;
+}
+
+.consultation_form--contacts {
+    background-color: var(--white-color);
+    padding: 95px 120px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.contacts__map {
+    margin-top: 80px;
+}

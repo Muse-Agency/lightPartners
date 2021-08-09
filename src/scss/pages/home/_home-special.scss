@@ -1,0 +1,21 @@
+/*==================== HOME SPECIALS ====================*/
+.specials__container {
+    gap: 25px;
+}
+.special__content {
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 230px;
+    padding: 0 110px;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--white-color);
+    gap: 80px;
+    align-items: center;
+}
+.special__title {
+    font-size: var(--h3-font-size);
+}
+.special__subtitle {
+    font-size: var(--text-style-1-font-size);
+}

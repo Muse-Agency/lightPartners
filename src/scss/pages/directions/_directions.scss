@@ -1,0 +1,47 @@
+/*==================== DIRECTION-PAGE ====================*/
+.direction_description__container1 {
+    grid-template-columns: repeat(2, 50%);
+    margin-bottom: 50px;
+}
+.direction_description__image {
+    background: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.direction_description__container1 .direction_description__image {
+    height: 668px;
+}
+.direction_description__container2 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    margin-bottom: 50px;
+}
+.direction_description__container2 .direction_description__image {
+    height: 415px;
+}
+
+.direction_description__container3 {
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+.direction_description__text1,
+.direction_description__text2 {
+    font-size: var(--text-style-1-font-size);
+}
+
+.direction_description__container4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.direction_description__container4 .direction_description__image {
+    height: 580px;
+}
+
+.direction_description__container5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}

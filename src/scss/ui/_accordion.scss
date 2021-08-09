@@ -1,0 +1,18 @@
+/*==================== ACCORDION ====================*/
+
+.accordion__arrow {
+    transform: rotate(90deg);
+    transition: 0.3s;
+}
+.accordion__content {
+    height: 0;
+    visibility: hidden;
+    transition: linear-in-out 0.3s;
+}
+.accordion__open .accordion__content {
+    height: auto;
+    visibility: visible;
+}
+.accordion__open .accordion__arrow {
+    transform: rotate(0deg);
+}

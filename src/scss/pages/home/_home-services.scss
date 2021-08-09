@@ -1,0 +1,22 @@
+/*==================== HOME SERVICES ====================*/
+.services__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 140px;
+    row-gap: 50px;
+}
+.service__icon {
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--icon-bg-color);
+    margin-bottom: 25px;
+}
+.service__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 15px;
+}
+.service__subtitle {
+    font-size: var(--text-style-4-font-size);
+}
