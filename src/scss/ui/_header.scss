@@ -7,12 +7,15 @@
     right: 0;
     top: 0;
     width: 100%;
+    min-height: 790px;
+    height: 100vh;
 }
 
 .header__slider-content,
 .header__services-content,
 .header__banner-content {
-    height: 791px;
+    min-height: 790px;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -81,11 +84,13 @@
 
 .header {
     padding: 10px 0;
+    height: 100vh;
+    min-height: 790px;
 }
 
 .header--home .header__container,
 .header--service-page .header__container {
-    height: 771px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
