@@ -1717,6 +1717,7 @@ button.swiper-pagination-bullet {
 .header__top-wrap {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  z-index: 10;
 }
 
 .header_sticky {
