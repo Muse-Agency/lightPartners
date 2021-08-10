@@ -1,11 +1,11 @@
 /*==================== 404 PAGE ====================*/
 .body__404 {
-    background-color: var(--black-color);
+    background-color: rgb(24, 24, 26);
     color: var(--white-color);
 }
 .section__404 {
-    height: 100vh;
-    background: url("../images/404/bg-404.png") center center no-repeat;
+    height: calc(100vh - var(--mb-after-blocks));
+    background: url("../images/404/bg.jpg") center center no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;

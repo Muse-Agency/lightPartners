@@ -918,6 +918,7 @@ button.swiper-pagination-bullet {
 /*==================== BREADCRUMBS ====================*/
 .breadcrumbs {
   margin-bottom: 60px;
+  margin-top: 30px;
 }
 
 .breadcrumbs__nav {
@@ -1515,9 +1516,9 @@ button.swiper-pagination-bullet {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header--service-page .header__container {
@@ -1541,6 +1542,8 @@ button.swiper-pagination-bullet {
 }
 
 .header__top {
+  max-width: 1400px;
+  margin: auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1718,21 +1721,28 @@ button.swiper-pagination-bullet {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header_sticky {
   position: fixed;
   background-color: var(--black-color);
-  z-index: 10;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 .header_sticky .header__top {
   max-width: 1400px;
   margin: auto;
+}
+.header_bg-black {
+  background-color: var(--black-color);
+}
+
+.header-pt {
+  padding-top: var(--header-height);
 }
 
 /*==================== LAYOUT ====================*/
@@ -2158,13 +2168,13 @@ button.swiper-pagination-bullet {
 
 /*==================== 404 PAGE ====================*/
 .body__404 {
-  background-color: var(--black-color);
+  background-color: #18181a;
   color: var(--white-color);
 }
 
 .section__404 {
-  height: 100vh;
-  background: url(../images/bg-404.8beeb9.png) center center no-repeat;
+  height: calc(100vh - var(--mb-after-blocks));
+  background: url(../images/bg.535c86.jpg) center center no-repeat;
   background-size: cover;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

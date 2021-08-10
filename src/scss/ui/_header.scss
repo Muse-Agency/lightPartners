@@ -101,7 +101,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .header--service-page .header__container {
@@ -124,6 +124,8 @@
 }
 
 .header__top {
+    max-width: 1400px;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
     color: var(--white-color);
@@ -286,21 +288,28 @@
 .header__top-wrap {
     transition: all 0.3s ease;
     z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .header {
     &_sticky {
         position: fixed;
         background-color: var(--black-color);
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
         .header__top {
             max-width: 1400px;
             margin: auto;
         }
     }
+    &_bg-black {
+        background-color: var(--black-color);
+    }
+}
+
+.header-pt {
+    padding-top: var(--header-height);
 }
