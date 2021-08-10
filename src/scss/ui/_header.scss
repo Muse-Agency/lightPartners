@@ -282,3 +282,24 @@
     font-size: 14px;
     margin-top: 7px;
 }
+
+.header__top-wrap {
+    transition: all 0.3s ease;
+}
+
+.header {
+    &_sticky {
+        position: fixed;
+        background-color: var(--black-color);
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .header__top {
+            max-width: 1400px;
+            margin: auto;
+        }
+    }
+}

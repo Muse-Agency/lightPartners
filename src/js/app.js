@@ -1,4 +1,5 @@
 import '../scss/app.scss';
+import './ui/header';
 
 
 /*==================== ACCORDION ADDITIONALS ====================*/
@@ -89,64 +90,61 @@ modalCloses.forEach((modalClose, i) => {
 
 
 /*======== MATCHING PRODUCTS ========*/
-let swiperMatching = new Swiper(".matching__products", {
-    loop: false,
-    grabCursor: true,
-    spaceBetween: 15,
-    slidesPerView: 4,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    breakpoints: {
-        // 568: {
-        //     slidesPerView: 4
-        // }
-    }
-});
-
-
 //Sticky matching header
-const matchingHeaders = document.querySelectorAll('.matching__header');
 const matchingContent = document.getElementById('matching-content');
+const matchingHeaders = document.querySelectorAll('.matching__header');
 const matchingContentProducts = document.getElementById('matching-products');
 const matchingHeaderSticky = document.getElementById('matching-header-sticky');
 const matchingHeaderStickyContainer = document.getElementById('matching-header-sticky-container');
 
-let heightMatchingHeader = 0;
-if (matchingHeaders.length) {
-    heightMatchingHeader = matchingHeaders[0].clientHeight;
-}
+if (matchingContent) {
+    let swiperMatching = new Swiper(".matching__products", {
+        loop: false,
+        grabCursor: true,
+        spaceBetween: 15,
+        slidesPerView: 4,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            // 568: {
+            //     slidesPerView: 4
+            // }
+        }
+    });
 
-const sticky = matchingContent.offsetTop + heightMatchingHeader;
 
-const leftBorderContent = matchingContentProducts.offsetLeft;
-const rightBorderContent = matchingContentProducts.offsetLeft + matchingContentProducts.clientWidth;
-
-const stickyMatching = () => {
-    if (window.pageYOffset >= sticky) {
-        matchingHeaderSticky.classList.add('show-matching-sticky');
-        matchingHeaderStickyContainer.innerHTML = '';
-        matchingHeaders.forEach((header, index) => {
-            // header.cloneNode(true).appendTo(matchingHeaderStickyContainer);
-            console.log(header.offsetLeft);
-            if (index < 5) {
-                matchingHeaderStickyContainer.appendChild(header.cloneNode(true));
-            }
-
-        });
-    } else {
-        matchingHeaderSticky.classList.remove('show-matching-sticky');
-        matchingHeaders.forEach(header => {
-            matchingHeaderStickyContainer.innerHTML = '';
-        });
+    let heightMatchingHeader = 0;
+    if (matchingHeaders.length) {
+        heightMatchingHeader = matchingHeaders[0].clientHeight;
     }
 
+    const sticky = matchingContent.offsetTop + heightMatchingHeader;
+
+    const leftBorderContent = matchingContentProducts.offsetLeft;
+    const rightBorderContent = matchingContentProducts.offsetLeft + matchingContentProducts.clientWidth;
+
+    const stickyMatching = () => {
+        if (window.pageYOffset >= sticky) {
+            matchingHeaderSticky.classList.add('show-matching-sticky');
+            matchingHeaderStickyContainer.innerHTML = '';
+            matchingHeaders.forEach((header, index) => {
+                // header.cloneNode(true).appendTo(matchingHeaderStickyContainer);
+                console.log(header.offsetLeft);
+                if (index < 5) {
+                    matchingHeaderStickyContainer.appendChild(header.cloneNode(true));
+                }
+
+            });
+        } else {
+            matchingHeaderSticky.classList.remove('show-matching-sticky');
+            matchingHeaders.forEach(header => {
+                matchingHeaderStickyContainer.innerHTML = '';
+            });
+        }
+
+    }
+
+    window.onscroll = function () { stickyMatching() };
 }
-
-
-
-
-
-window.onscroll = function () { stickyMatching() };
-

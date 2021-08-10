@@ -41,6 +41,7 @@
 }
 .button--red svg {
     fill: #fff;
+    transition: fill 0.3s ease;
 }
 
 .button--orange {
@@ -59,13 +60,15 @@
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
     transition: ease-out 0.4s;
+    border: none;
 }
 
 .button--slider-hover:hover {
-    background-color: var(--button-red-color);
+    background-color: #fff;
     opacity: 1;
     color: var(--black-color);
     box-shadow: inset 400px 0 0 0 #fff;
+    border: none;
 }
 .button--slider-hover:hover svg {
     fill: var(--black-color);
