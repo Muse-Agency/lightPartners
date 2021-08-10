@@ -1224,6 +1224,11 @@ button.swiper-pagination-bullet {
   background-color: var(--bg-dark-color);
   padding: 60px 0;
 }
+.footer .social__links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
 .footer,
 .footer a {
@@ -2472,48 +2477,39 @@ button.swiper-pagination-bullet {
 }
 
 /*==================== HOME BRANDS ====================*/
+.brands .button {
+  min-width: 182px;
+}
 .brands__container {
   margin-bottom: 30px;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 20px;
 }
 
-.brand__link,
-.brand__link-img-hover {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .brand__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   width: auto;
-  height: 130px;
+  height: 110px;
   border: 1px var(--black-color) solid;
   overflow: hidden;
+  -webkit-transition: -webkit-filter 0.3s ease;
+  transition: -webkit-filter 0.3s ease;
+  transition: filter 0.3s ease;
+  transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+  background-color: #fff;
 }
-
-.brand__link-img-hover {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  opacity: 0;
-  background-color: var(--black-color);
-}
-
 .brand__link:hover {
-  opacity: 1;
-}
-
-.brand__link:hover .brand__link-img-hover {
-  opacity: 1;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 /*==================== HOME NEW PRODUCTS ====================*/
@@ -2712,6 +2708,11 @@ button.swiper-pagination-bullet {
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
           box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   padding: 15px;
+  overflow: hidden;
+}
+.product__content:hover .product__img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .product__title,
@@ -2733,6 +2734,10 @@ button.swiper-pagination-bullet {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 
 .product__label {

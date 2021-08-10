@@ -8,6 +8,12 @@
     background-color: #fff;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     padding: 15px;
+    overflow: hidden;
+    &:hover {
+        .product__img {
+            transform: scale(1.2);
+        }
+    }
 }
 .product__title,
 .product__img {
@@ -26,6 +32,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    transition: transform 0.3s ease;
 }
 .product__label {
     position: absolute;

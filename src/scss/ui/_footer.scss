@@ -3,6 +3,9 @@
     margin-top: var(--mb-after-blocks);
     background-color: var(--bg-dark-color);
     padding: 60px 0;
+    .social__links {
+        justify-content: space-between;
+    }
 }
 .footer,
 .footer a {
