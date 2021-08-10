@@ -7,20 +7,24 @@
     right: 0;
     top: 0;
     width: 100%;
-    min-height: 790px;
+    min-height: 700px;
     height: 100vh;
 }
 
 .header__slider-content,
 .header__services-content,
 .header__banner-content {
-    min-height: 790px;
+    min-height: 700px;
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .header__banner-content {
     height: 500px;
+}
+.header__slider-wrapper {
+    display: flex;
+    align-items: center;
 }
 .header__slider-wrapper,
 .header__services-wrapper,
@@ -33,8 +37,8 @@
 .header__slider-container,
 .header__services-container,
 .header__banner-container {
-    padding-left: 100px;
-    padding-top: 225px;
+    padding-top: 105px;
+    padding-bottom: 175px;
 }
 .header__slider-title,
 .header__services-title,
@@ -48,6 +52,8 @@
     .button {
         width: 250px;
         margin-left: 2px;
+        display: flex;
+        justify-content: space-between;
     }
 }
 
@@ -85,11 +91,13 @@
 .header {
     padding: 10px 0;
     height: 100vh;
-    min-height: 790px;
+    min-height: 700px;
 }
 
 .header--home .header__container,
 .header--service-page .header__container {
+    width: 100%;
+    max-width: 1400px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -181,8 +189,10 @@
 }
 
 .header__categories {
-    padding-left: 102px;
-    padding-right: 102px;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -219,37 +229,37 @@
 .header__categories-link-1 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 .header__categories-link-2 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 .header__categories-link-3 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 .header__categories-link-4 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 .header__categories-link-5 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 .header__categories-link-6 {
     &::after {
         background: url("../images/home__top_service/bg-item.png") center center no-repeat;
-        background-size: cover;
+        background-size: 100% 100%;
     }
 }
 

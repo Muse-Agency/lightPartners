@@ -1,4 +1,9 @@
 /*==================== HOME PROJECTS ====================*/
+.projects {
+    .section__header {
+        column-gap: 20px;
+    }
+}
 .projects__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -46,7 +51,7 @@
     grid-template-columns: 1fr 1fr;
 }
 .projects__anonce-text {
-    font-size: var(--text-style-1-font-size);
+    font-size: var(--text-style-2-font-size);
 }
 .projects__anonce-buttons {
     text-align: right;

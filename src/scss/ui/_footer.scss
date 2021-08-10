@@ -1,41 +1,59 @@
 /*==================== FOOTER ====================*/
 .footer {
-    margin-top: 200px;
+    margin-top: var(--mb-after-blocks);
     background-color: var(--bg-dark-color);
     padding: 60px 0;
 }
 .footer,
 .footer a {
     color: var(--white-color);
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.footer__logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 3px;
 }
 
 .footer__content {
-    grid-template-columns: 1fr 2fr 2fr;
-    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .footer__links {
-    width: 400px;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-left: 100px;
+    width: 100%;
+    max-width: 300px;
+    margin-right: auto;
+    max-height: 100px;
+    &-social {
+        width: 100%;
+        margin-top: -70px;
+    }
 }
-
 .footer__nav {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 40px;
-    row-gap: 20px;
-    justify-self: left;
+    flex-wrap: wrap;
+    &-item {
+        margin-bottom: 20px;
+        height: 20px;
+        width: 86px;
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(5) {
+            margin-right: 75px;
+        }
+    }
 }
 .footer__nav-link {
     font-family: var(--header-font);
     font-size: 20px;
     font-weight: var(--font-medium);
+    width: 45%;
 }
 
 .footer__title {
-    font-size: 16px;
+    font-size: 14px;
     font-family: var(--header-font);
     color: var(--grey-color);
     margin-bottom: 5px;
@@ -46,6 +64,14 @@
     column-gap: 30px;
     row-gap: 5px;
     width: 335px;
+    margin-top: 15px;
+}
+
+.footer__contact_value {
+    margin-bottom: 25px;
+    a {
+        font-size: 18px;
+    }
 }
 
 .footer__contacts {
@@ -53,6 +79,9 @@
     justify-content: space-between;
 }
 
+.footer__politics {
+    margin-top: 50px;
+}
 .footer__politics-link {
     font-family: var(--header-font);
 }

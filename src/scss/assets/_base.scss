@@ -40,8 +40,14 @@ a:hover {
     text-decoration: none;
 }
 
+a:active {
+    opacity: 1;
+}
+
 .clickable-element {
     color: var(--white-color);
+    transition: color 0.3s ease, border 0.3s ease;
+    border-bottom: 1px solid transparent;
 }
 
 .clickable-element:hover {

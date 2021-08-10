@@ -2,7 +2,7 @@
 .brands__container {
     margin-bottom: 30px;
     grid-template-columns: repeat(6, 1fr);
-    row-gap: 20px;
+    grid-gap: 20px;
 }
 .brand__link,
 .brand__link-img-hover {
@@ -14,7 +14,7 @@
 .brand__link {
     display: block;
     position: relative;
-    width: 215px;
+    width: auto;
     height: 130px;
     border: 1px var(--black-color) solid;
     overflow: hidden;

@@ -1,6 +1,6 @@
 /*==================== HOME NEWS ====================*/
 .news__container {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     row-gap: 45px;
 }
@@ -16,15 +16,6 @@
     font-size: var(--h3-font-size);
     margin-bottom: 25px;
     position: relative;
-}
-.news__title::before {
-    content: "";
-    width: 71px;
-    height: 1px;
-    background-color: var(--black-color);
-    position: absolute;
-    bottom: -10px;
-    left: 0;
 }
 
 .news__preview {
@@ -56,4 +47,10 @@
 
 .subscribe__form.subscribe__form--in-list .subscribe__buttons {
     margin-top: 25px;
+}
+
+.news {
+    .lightning_news__subscribe {
+        margin-top: 40px;
+    }
 }

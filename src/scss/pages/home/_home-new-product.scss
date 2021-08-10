@@ -24,7 +24,7 @@
 }
 
 .lightning_news__subscribe {
-    padding: 50px 80px;
+    padding: 33px 60px;
     margin-bottom: 25px;
     background-color: var(--white-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -37,13 +37,14 @@
 .subscribe__form-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 .subscribe__form-title {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1;
     font-family: var(--header-font);
     font-weight: var(--font-medium);
+    margin-bottom: 15px;
 }
 .subscribe__form-subtitle {
     font-family: var(--header-font);
@@ -55,7 +56,7 @@
     gap: 19px;
 }
 .subscribe__form-inputs .form__group-input {
-    height: 45px;
+    height: 40px;
     font-family: var(--header-font);
     font-size: 14px;
     font-weight: var(--font-medium);
@@ -63,8 +64,24 @@
 .subscribe__form-button {
     min-width: auto;
     padding: 0;
-    height: 45px;
+    height: 40px;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.new-products {
+    .section__caption {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .section__title {
+            margin-right: 15px;
+            width: 50%;
+        }
+        .section__description {
+            width: 50%;
+        }
+    }
 }

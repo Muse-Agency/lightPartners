@@ -6,11 +6,13 @@
     border: none;
     background: none;
     font-family: var(--body-font);
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 22px;
     transition: 0.3s;
     min-width: 215px;
     text-align: center;
     cursor: pointer;
+    min-height: 50px;
 }
 .button:hover {
     opacity: 0.9;
@@ -30,6 +32,12 @@
 .button--red {
     background-color: var(--button-red-color);
     color: #fff;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: transparent;
+        color: #101010;
+        border: 1px solid #101010;
+    }
 }
 .button--red svg {
     fill: #fff;
@@ -38,6 +46,12 @@
 .button--orange {
     background-color: var(--button-orange-color);
     color: #fff;
+    border: 1px solid transparent;
+    &:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 1px solid #fff;
+    }
 }
 
 .button--slider-hover {
@@ -48,6 +62,7 @@
 }
 
 .button--slider-hover:hover {
+    background-color: var(--button-red-color);
     opacity: 1;
     color: var(--black-color);
     box-shadow: inset 400px 0 0 0 #fff;
