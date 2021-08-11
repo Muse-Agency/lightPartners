@@ -1,10 +1,31 @@
 /*==================== COMPANY PAGE ====================*/
 .company__content {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 138px;
-    row-gap: 60px;
-    font-size: var(--text-style-1-font-size);
+    column-gap: 90px;
+    row-gap: 50px;
+    font-size: 18px;
 }
 .company__content p + p {
     margin-top: 20px;
+}
+.company--banner {
+    position: static;
+}
+.company-body {
+    .mt-25 {
+        margin-top: 25px;
+    }
+    .section__content {
+        margin-top: 25px;
+    }
+    .header__banner-content {
+        height: 100vh;
+        min-height: 700px;
+        background-size: cover;
+    }
+    .header__banner-wrapper {
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+    }
 }

@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
     <title>Трековый светильник Magnetic CSMV5335MC0S - Профессиональные световые решения</title>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
 
 <body>
@@ -107,23 +105,22 @@
                     <div class="card_product__main grid">
                         <div class="card_product__images--wrapper">
                             <div class="card_product__images grid">
-
-                                <a href="javascript:void()" data-img="./images/catalog__pages/card__product/1.png"
+                                <div data-img="./images/catalog__pages/card__product/1.png"
                                     class="card_product__image-link"
-                                    style="background-image: url('./images/catalog__pages/card__product/1.png');"></a>
-                                <a href="javascript:void()" id="main-image-product"
-                                    data-img="./images/catalog__pages/card__product/main.png"
+                                    style="background-image: url('./images/catalog__pages/card__product/1.png');"></div>
+                                <div id="main-image-product" data-img="./images/catalog__pages/card__product/main.png"
                                     class="card_product__image-link--main"
-                                    style="background-image: url('./images/catalog__pages/card__product/main.png');"></a>
-                                <a href="javascript:void()" data-img="./images/catalog__pages/card__product/2.png"
+                                    style="background-image: url('./images/catalog__pages/card__product/main.png');">
+                                </div>
+                                <div data-img="./images/catalog__pages/card__product/2.png"
                                     class="card_product__image-link"
-                                    style="background-image: url('./images/catalog__pages/card__product/2.png');"></a>
-                                <a href="javascript:void()" data-img="./images/catalog__pages/card__product/3.png"
+                                    style="background-image: url('./images/catalog__pages/card__product/2.png');"></div>
+                                <div data-img="./images/catalog__pages/card__product/3.png"
                                     class="card_product__image-link"
-                                    style="background-image: url('./images/catalog__pages/card__product/3.png');"></a>
-                                <a href="javascript:void()" data-img="./images/catalog__pages/card__product/4.png"
+                                    style="background-image: url('./images/catalog__pages/card__product/3.png');"></div>
+                                <div data-img="./images/catalog__pages/card__product/4.png"
                                     class="card_product__image-link"
-                                    style="background-image: url('./images/catalog__pages/card__product/4.png');"></a>
+                                    style="background-image: url('./images/catalog__pages/card__product/4.png');"></div>
 
 
                             </div>
@@ -133,18 +130,21 @@
                             <h1 class="card_product__title">Трековый светильник Magnetic CSMV5335MC0S</h1>
                             <div class="card_product__actions flex">
                                 <div>
-                                    <button class="card_product__action flex modal-button"
+                                    <button class="card_product__action flex js-modal-btn"
                                         data-target="modal-favorites">
-                                        <img src="./images/catalog__pages/card__product/icon-heart.svg"
-                                            class="card_product__action-icon" alt="">
+                                        <svg class="card_product__action-icon" width="15" height="15"
+                                            viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M4.21875 0.625C2.23688 0.625 0.625 2.2375 0.625 4.21875C0.625 8.46875 6.36875 13.3625 7.5 14.2875C8.63125 13.3625 14.375 8.4625 14.375 4.21875C14.375 2.2375 12.7631 0.625 10.7812 0.625C9.55812 0.625 8.42937 1.24375 7.7625 2.275C7.705 2.3625 7.60625 2.41875 7.5 2.41875C7.39375 2.41875 7.295 2.3625 7.2375 2.275C6.57125 1.24375 5.4425 0.625 4.21875 0.625ZM7.5 15C7.4325 15 7.365 14.9812 7.30813 14.9375C7.01 14.7063 0 9.2125 0 4.21875C0 1.89375 1.8925 0 4.21875 0C5.50562 0 6.7025 0.58125 7.5 1.56875C8.29813 0.58125 9.495 0 10.7812 0C13.1075 0 15 1.89375 15 4.21875C15 9.2125 7.99 14.7063 7.69187 14.9375C7.635 14.9812 7.5675 15 7.5 15Z"
+                                                fill="black" />
+                                        </svg>
                                         <span class="card_product__action-title">В избранное</span>
                                     </button>
-
-                                    <div class="modal modal--right-top" id="modal-favorites">
+                                    <div class="js-modal modal modal--right-top" id="modal-favorites">
                                         <div class="modal__container modal__container--white modal__container--items">
                                             <div class="modal__header flex">
                                                 <h3 class="modal__header-title">Избранное</h3>
-                                                <button class="modal__header-close modal-close"><i
+                                                <button class="modal__header-close js-modal-close"><i
                                                         class="uil uil-multiply"></i></button>
                                             </div>
                                             <div class="modal__items">
@@ -223,20 +223,19 @@
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
 
                                 <div>
-                                    <button class="card_product__action flex modal-button" data-target="modal-compares">
+                                    <button class="card_product__action flex js-modal-btn" data-target="modal-compares">
                                         <img src="./images/catalog__pages/card__product/icon-compare.svg"
                                             class="card_product__action-icon" alt="">
                                         <span class="card_product__action-title">Добавить к сравнению</span>
                                     </button>
-                                    <div class="modal modal--right-top" id="modal-compares">
+                                    <div class="js-modal modal modal--right-top" id="modal-compares">
                                         <div class="modal__container modal__container--white modal__container--items">
                                             <div class="modal__header flex">
                                                 <h3 class="modal__header-title">Сравнить товары</h3>
-                                                <button class="modal__header-close modal-close"><i
+                                                <button class="modal__header-close js-modal-close"><i
                                                         class="uil uil-multiply"></i></button>
                                             </div>
                                             <div class="modal__items">
@@ -431,13 +430,13 @@
                                 </div>
                             </div>
                             <div class="card_product__cart">
-                                <button class="button button--red card_product__cart-button modal-button"
+                                <button class="button button--red card_product__cart-button js-modal-btn"
                                     data-target="modal-fast-order">Купить</button>
-                                <div class="modal modal--right-top" id="modal-fast-order">
+                                <div class="js-modal modal modal--right-top" id="modal-fast-order">
                                     <div class="modal__container modal__container--white modal__container--items">
                                         <div class="modal__header flex">
                                             <h3 class="modal__header-title">Корзина</h3>
-                                            <button class="modal__header-close modal-close"><i
+                                            <button class="modal__header-close js-modal-close"><i
                                                     class="uil uil-multiply"></i></button>
                                         </div>
                                         <div class="modal__items">
@@ -554,7 +553,7 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="form__buttons form__buttons--vertical modal-button"
+                                                    <div class="form__buttons form__buttons--vertical js-modal-btn"
                                                         data-target="modal-success">
                                                         <button class="button button--red"
                                                             type="submit">Отправить</button>
@@ -584,7 +583,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        <button class="modal__success-close modal__header-close modal-close"><i
+                                        <button class="modal__success-close modal__header-close js-modal-close"><i
                                                 class="uil uil-multiply"></i></button>
                                     </div>
                                 </div>
@@ -598,7 +597,8 @@
                             technology. The family business,
                             based in Lüden­scheid, in the heart of Germany, now operates as a global player with
                             independent sales organisations and
-                            partners in 55 countries worldwide.
+                            partners in 55 countries worldwide.</p>
+                        <p>
                             Founded in 1934, ERCO pioneered architectural lighting across Europe in the 1960s, and
                             today, less than 50 years later,
                             is the first established luminaire manufacturer with a portfolio based entirely on LED
@@ -707,15 +707,13 @@
                         <h3 class="section_inner__title">Товары этой серии</h3>
                         <div class="section_inner__content">
                             <div class="products__container product_cards__list grid">
-                                <div class="product__content product_card">
-                                    <div class="product_card__images">
-                                        <a href="/catalog-detail.html" class="product_card__img"
-                                            style="background-image: url('./images/catalog__pages/products__list/1.png');">
-                                        </a>
+                                <a href="#" class="product__content product_card">
+                                    <div class="product_card__pic">
+                                        <img src="./images/catalog__pages/products__list/1.png" alt="">
                                     </div>
 
                                     <h3 class="product_card__title">
-                                        <a href="/catalog-detail.html">Трековый светильник Magnetic</a>
+                                        Трековый светильник Magnetic
                                     </h3>
 
                                     <div class="product_card__attributes grid">
@@ -757,16 +755,14 @@
                                             <div class="product_card__brand">Flos</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product__content product_card">
-                                    <div class="product_card__images">
-                                        <a href="/catalog-detail.html" class="product_card__img"
-                                            style="background-image: url('./images/catalog__pages/products__list/2.png');">
-                                        </a>
+                                </a>
+                                <a href="#" class="product__content product_card">
+                                    <div class="product_card__pic">
+                                        <img src="./images/catalog__pages/products__list/2.png" alt="">
                                     </div>
 
                                     <h3 class="product_card__title">
-                                        <a href="/catalog-detail.html">Трековый светильник Magnetic</a>
+                                        Трековый светильник Magnetic
                                     </h3>
 
                                     <div class="product_card__attributes grid">
@@ -808,41 +804,14 @@
                                             <div class="product_card__brand">Flos</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product__content product_card">
-                                    <div class="product_card__images swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide"><a href="/catalog-detail.html"
-                                                    class="product_card__img"
-                                                    style="background-image: url('./images/catalog__pages/products__list/3.png');">
-                                                </a></div>
-
-                                            <div class="swiper-slide"><a href="/catalog-detail.html"
-                                                    class="swiper-slide product_card__img"
-                                                    style="background-image: url('./images/catalog__pages/products__list/2.png');">
-                                                </a></div>
-
-                                            <div class="swiper-slide"><a href="/catalog-detail.html"
-                                                    class="swiper-slide product_card__img"
-                                                    style="background-image: url('./images/catalog__pages/products__list/1.png');">
-                                                </a></div>
-
-                                            <div class="swiper-slide"><a href="/catalog-detail.html"
-                                                    class="swiper-slide product_card__img"
-                                                    style="background-image: url('./images/catalog__pages/products__list/3.png');">
-                                                </a></div>
-
-                                            <div class="swiper-slide"><a href="/catalog-detail.html"
-                                                    class="swiper-slide product_card__img"
-                                                    style="background-image: url('./images/catalog__pages/products__list/2.png');">
-                                                </a></div>
-
-                                        </div>
-                                        <div class="swiper-pagination"></div>
+                                </a>
+                                <a href="#" class="product__content product_card">
+                                    <div class="product_card__pic">
+                                        <img src="./images/catalog__pages/products__list/3.png" alt="">
                                     </div>
 
                                     <h3 class="product_card__title">
-                                        <a href="/catalog-detail.html">Трековый светильник Magnetic</a>
+                                        Трековый светильник Magnetic
                                     </h3>
 
                                     <div class="product_card__attributes grid">
@@ -884,35 +853,14 @@
                                             <div class="product_card__brand">Flos</div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="product__content product_card">
-                                    <div class="product_card__labels flex">
-                                        <div class="product_card__label flex">
-                                            <div class="product_card__label-icon">
-                                                <img src="./images/catalog__pages/products__list/icon__winner.svg"
-                                                    alt="">
-                                            </div>
-                                            <div class="product_card__label-text">
-                                                Победитель reddot awards
-                                            </div>
-                                        </div>
-                                        <div class="product_card__label flex">
-                                            <div class="product_card__label-icon">
-                                                <img src="./images/catalog__pages/products__list/icon__new.svg" alt="">
-                                            </div>
-                                            <div class="product_card__label-text">
-                                                Новинка
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="product_card__images">
-                                        <a href="/catalog-detail.html" class="product_card__img"
-                                            style="background-image: url('./images/catalog__pages/products__list/1.png');">
-                                        </a>
+                                </a>
+                                <a href="#" class="product__content product_card">
+                                    <div class="product_card__pic">
+                                        <img src="./images/catalog__pages/products__list/2.png" alt="">
                                     </div>
 
                                     <h3 class="product_card__title">
-                                        <a href="/catalog-detail.html">Трековый светильник Magnetic</a>
+                                        Трековый светильник Magnetic
                                     </h3>
 
                                     <div class="product_card__attributes grid">
@@ -954,7 +902,7 @@
                                             <div class="product_card__brand">Flos</div>
                                         </div>
                                     </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </section>

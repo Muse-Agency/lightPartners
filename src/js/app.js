@@ -60,14 +60,11 @@ imgProductLinks.forEach(el => {
 
 
 /*==================== MODALS ====================*/
-const modalViews = document.querySelectorAll('.modal'),
-    modalBtns = document.querySelectorAll('.modal-button'),
-    modalCloses = document.querySelectorAll('.modal-close');
+const modalViews = document.querySelectorAll('.js-modal'),
+    modalBtns = document.querySelectorAll('.js-modal-btn'),
+    modalCloses = document.querySelectorAll('.js-modal-close');
 
 let modal = function (modalClick) {
-    // modalViews.forEach(modalView => {
-    //     modalView.classList.remove('active-modal');
-    // });
     const modalTarget = document.getElementById(modalClick);
     if (modalTarget) {
         modalTarget.classList.add('active-modal');

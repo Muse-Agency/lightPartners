@@ -1,0 +1,19 @@
+.brands-catalog {
+    margin-top: 50px;
+    &-page {
+        .section {
+            &__manufacturer {
+                margin-top: 20px;
+            }
+            &__header {
+                grid-template-columns: 1fr 0.8fr;
+            }
+            &__picture {
+                height: 400px;
+            }
+            &__description-bottom {
+                margin-top: 30px;
+            }
+        }
+    }
+}

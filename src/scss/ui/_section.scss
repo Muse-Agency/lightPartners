@@ -17,6 +17,10 @@
 }
 .section__header--brands-catalog {
     column-gap: 20px;
+    margin-top: 25px;
+    .section__picture {
+        margin-top: 0;
+    }
 }
 .section__content {
     margin-top: var(--mb-before-list-card);

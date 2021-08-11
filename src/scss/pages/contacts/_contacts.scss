@@ -1,8 +1,4 @@
 /*==================== CONTACTS PAGE ====================*/
-.contacts__section {
-    padding-left: 100px;
-    padding-right: 100px;
-}
 .contacts__content {
     grid-template-columns: 1fr 1fr;
     column-gap: 118px;
@@ -12,6 +8,8 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 80px;
     row-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .contacts__info-item:nth-child(3) {
@@ -39,10 +37,10 @@
 
 .consultation_form--contacts {
     background-color: var(--white-color);
-    padding: 95px 120px;
+    padding: 95px 115px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .contacts__map {
-    margin-top: 80px;
+    margin-top: 50px;
 }
