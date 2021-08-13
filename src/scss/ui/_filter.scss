@@ -18,7 +18,7 @@
 .filters__radio-item label,
 .subcategories__link {
     display: flex;
-    font-size: var(--text-style-5-font-size);
+    font-size: 15px;
     height: 49px;
     padding: 0 31px;
     justify-content: center;
@@ -58,7 +58,7 @@
 }
 
 .filter__attr-title {
-    font-size: var(--text-style-5-font-size);
+    font-size: var(--text-style-18-font-size);
 }
 
 .filter__attr-arrow > span,
@@ -96,7 +96,7 @@
     gap: 20px;
 }
 .filter__attr-value--radio label {
-    font-size: var(--text-style-5-font-size);
+    font-size: var(--text-style-18-font-size);
     cursor: pointer;
 }
 .filter__attr-value--radio input[type="radio"]:checked + label {
@@ -104,7 +104,7 @@
 }
 
 .sorts__title {
-    font-size: var(--text-style-5-font-size);
+    font-size: var(--text-style-18-font-size);
 }
 .sorst__list {
     gap: 15px;
@@ -114,7 +114,7 @@
     text-align: right;
 }
 .sort__link {
-    font-size: var(--text-style-5-font-size);
+    font-size: var(--text-style-18-font-size);
     white-space: nowrap;
 }
 .sort__link.sort__link--active {
@@ -125,7 +125,7 @@
     margin-top: 20px;
     padding: 0 20px;
     justify-content: space-between;
-    font-size: var(--text-style-5-font-size);
+    font-size: var(--text-style-18-font-size);
     color: var(--grey-color);
 }
 .filters_selected__attr-list {

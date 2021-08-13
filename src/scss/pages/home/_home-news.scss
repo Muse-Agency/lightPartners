@@ -1,8 +1,8 @@
 /*==================== HOME NEWS ====================*/
 .news__container {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    row-gap: 45px;
+    column-gap: 25px;
+    row-gap: 50px;
 }
 .news__image {
     height: 365px;
@@ -19,7 +19,7 @@
 }
 
 .news__preview {
-    font-size: var(--text-style-4-font-size);
+    font-size: var(--text-style-20-font-size);
     margin-bottom: 15px;
 }
 .news__date {
@@ -33,7 +33,7 @@
     background-color: var(--white-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     color: var(--black-color);
-    height: 365px;
+    height: 100%;
     padding: 30px;
 }
 .subscribe__form.subscribe__form--in-list .subscribe__form-title {

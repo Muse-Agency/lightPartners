@@ -6,7 +6,7 @@
 }
 
 .consultation__container {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
     gap: 150px;
     align-items: center;
 }
@@ -17,5 +17,12 @@
 }
 
 .consultation__description {
-    font-size: var(--text-style-1-font-size);
+    font-size: var(--text-style-18-font-size);
+}
+.consultation {
+    .section {
+        &__content {
+            margin-top: 0;
+        }
+    }
 }

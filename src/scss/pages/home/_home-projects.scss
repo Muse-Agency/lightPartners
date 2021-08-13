@@ -51,7 +51,10 @@
     grid-template-columns: 1fr 1fr;
 }
 .projects__anonce-text {
-    font-size: var(--text-style-2-font-size);
+    font-size: var(--text-style-16-font-size);
+    p {
+        margin-bottom: 20px;
+    }
 }
 .projects__anonce-buttons {
     text-align: right;

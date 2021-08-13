@@ -13,24 +13,17 @@ accordionHeaders.forEach(el => {
     el.addEventListener('click', toggleAccordions);
 });
 
-let swiperHeader = new Swiper(".header__slider", {
-    loop: true,
-    grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-
-let swiperProductCardsImg = new Swiper(".product_card__images", {
-    loop: true,
-    grabCursor: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
+const headerSlider = document.querySelector(".header__slider")
+if (headerSlider) {
+    let swiperHeader = new Swiper(headerSlider, {
+        loop: true,
+        grabCursor: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+}
 
 /*== HOVER IMAGE SLIDER ==*/
 const imgSections = document.querySelectorAll('.product_card__images-section');
@@ -100,9 +93,9 @@ if (matchingContent) {
         grabCursor: true,
         spaceBetween: 15,
         slidesPerView: 4,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+        navigation: {
+            nextEl: '.matching-btn-next',
+            prevEl: '.matching-btn-prev',
         },
         breakpoints: {
             // 568: {

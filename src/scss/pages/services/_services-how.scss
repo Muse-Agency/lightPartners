@@ -36,10 +36,16 @@
     grid-template-columns: 4fr 1fr;
     gap: 60px;
     align-items: flex-end;
+    .button {
+        &:hover {
+            background-color: #fff !important;
+        }
+    }
 }
 .how_content__text {
-    font-size: var(--text-style-1-font-size);
+    font-size: var(--text-style-24-font-size);
     color: var(--white-color);
+    max-width: 890px;
 }
 .how_content__text p + p {
     margin-top: 10px;

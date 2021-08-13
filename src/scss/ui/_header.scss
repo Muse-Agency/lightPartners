@@ -65,7 +65,7 @@
     margin-bottom: 10px;
 }
 .header__slider-subtitle {
-    font-size: var(--text-style-1-font-size);
+    font-size: var(--text-style-24-font-size);
     font-family: var(--header-font);
     line-height: 29px;
     color: #e5e5e5;
@@ -351,4 +351,23 @@
 
 .header-pt {
     padding-top: var(--header-height);
+}
+
+.page-header-wrapper {
+    .header__banner {
+        max-height: 800px;
+    }
+    .header__banner-content {
+        max-height: 800px;
+        height: 100vh;
+        min-height: 700px;
+        background-size: cover;
+        background-position: center;
+    }
+    .header__banner-wrapper {
+        max-height: 800px;
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+    }
 }
