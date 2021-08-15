@@ -354,19 +354,26 @@
 }
 
 .page-header-wrapper {
+    .header__slider-container,
+    .header__services-container,
+    .header__banner-container {
+        padding-top: 175px;
+        padding-bottom: 175px;
+    }
     .header__banner {
-        max-height: 800px;
+        max-height: 500px;
+        min-height: 400px;
     }
     .header__banner-content {
-        max-height: 800px;
+        max-height: 500px;
         height: 100vh;
-        min-height: 700px;
+        min-height: 400px;
         background-size: cover;
         background-position: center;
     }
     .header__banner-wrapper {
-        max-height: 800px;
-        min-height: 700px;
+        max-height: 500px;
+        min-height: 400px;
         display: flex;
         align-items: center;
     }

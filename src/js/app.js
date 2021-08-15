@@ -121,9 +121,13 @@ if (matchingContent) {
             matchingHeaderStickyContainer.innerHTML = '';
             matchingHeaders.forEach((header, index) => {
                 // header.cloneNode(true).appendTo(matchingHeaderStickyContainer);
-                console.log(header.offsetLeft);
                 if (index < 5) {
                     matchingHeaderStickyContainer.appendChild(header.cloneNode(true));
+                } else if (window.pageYOffset + window.innerHeight === document.body.scrollHeight) {
+                    matchingHeaderSticky.classList.remove('show-matching-sticky');
+                    matchingHeaders.forEach(header => {
+                        matchingHeaderStickyContainer.innerHTML = '';
+                    });
                 }
 
             });
@@ -133,7 +137,7 @@ if (matchingContent) {
                 matchingHeaderStickyContainer.innerHTML = '';
             });
         }
-
+        console.log(window.pageYOffset + window.innerHeight === document.body.scrollHeight)
     }
 
     window.onscroll = function () { stickyMatching() };

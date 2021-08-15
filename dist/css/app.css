@@ -111,7 +111,7 @@ input[type=email] {
   --button-red-color: #bd1626;
   --button-orange-color: #f39629;
   /*========== Colors ==========*/
-  --black-color: #101010;
+  --black-color: #161616;
   --white-color: #fff;
   --blue-color: #2e3f7f;
   --ligth-blue-color: #4970d2;
@@ -1783,19 +1783,26 @@ button.swiper-pagination-bullet {
   padding-top: var(--header-height);
 }
 
+.page-header-wrapper .header__slider-container,
+.page-header-wrapper .header__services-container,
+.page-header-wrapper .header__banner-container {
+  padding-top: 175px;
+  padding-bottom: 175px;
+}
 .page-header-wrapper .header__banner {
-  max-height: 800px;
+  max-height: 500px;
+  min-height: 400px;
 }
 .page-header-wrapper .header__banner-content {
-  max-height: 800px;
+  max-height: 500px;
   height: 100vh;
-  min-height: 700px;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
 }
 .page-header-wrapper .header__banner-wrapper {
-  max-height: 800px;
-  min-height: 700px;
+  max-height: 500px;
+  min-height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2071,10 +2078,6 @@ button.swiper-pagination-bullet {
 .modifications__table tr:first-child td,
 .modifications__table tr.modifications__title + tr td {
   border-top: none;
-}
-
-.modifications__table tr.modifications__title a {
-  text-decoration: underline;
 }
 
 .modifications__table tr:last-child td {
@@ -2880,13 +2883,13 @@ button.swiper-pagination-bullet {
 .product__content {
   position: relative;
   background-color: #fff;
-  border: 1px solid transparent;
+  outline: 1px solid transparent;
   -webkit-box-shadow: 0px 3.29078px 12.3404px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 3.29078px 12.3404px rgba(0, 0, 0, 0.1);
   padding: 15px;
   overflow: hidden;
-  -webkit-transition: border 0.3s ease;
-  transition: border 0.3s ease;
+  -webkit-transition: outline 0.3s ease;
+  transition: outline 0.3s ease;
 }
 .product__content .product__img,
 .product__content .product_card__pic img {
@@ -2896,7 +2899,7 @@ button.swiper-pagination-bullet {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
 .product__content:hover {
-  border: 1px solid #dedede;
+  outline: 1px solid #dedede;
 }
 .product__content:hover .product__img,
 .product__content:hover .product_card__pic img {
