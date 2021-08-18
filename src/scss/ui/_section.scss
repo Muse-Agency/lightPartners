@@ -14,6 +14,9 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 90px;
     align-items: flex-start;
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 .section__header--brands-catalog {
     column-gap: 20px;
@@ -22,11 +25,23 @@
         margin-top: 0;
     }
 }
+
+.section__container{
+    @media screen and (max-width: 1240px) {
+        padding: 0 10px;
+    }
+}
+
 .section__content {
     margin-top: var(--mb-before-list-card);
 }
 .section__title {
     line-height: 1;
+    font-size: 36px;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
 }
 .section__title + .section__button {
     margin-top: 30px;
@@ -53,22 +68,33 @@
 
 .section__banner {
     margin-top: 60px;
+    
 }
 .section__description {
     font-size: var(--text-style-18-font-size);
     font-family: var(--body-font);
 }
 .section__description-bottom {
-    margin-top: 60px;
+    margin-top: 36px;
     font-size: var(--text-style-14-font-size);
     width: 40%;
     font-family: var(--header-font);
+    @media screen and (max-width: 768px) {
+        margin-top: 30px;
+    }
+
+    
 }
 
 .section__description-bottom.section__description-bottom--brands {
-    font-size: 24px;
+    font-size: var(--text-style-18-font-size);
     font-family: var(--body-font);
-    width: 55%;
+    max-width: 568.4px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+        font-size: var(--text-style-16-font-size);
+    }
 }
 
 .section__description p + p {
