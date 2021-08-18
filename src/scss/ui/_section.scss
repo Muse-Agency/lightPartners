@@ -21,6 +21,7 @@
 .section__header--brands-catalog {
     column-gap: 20px;
     margin-top: 25px;
+    
     .section__picture {
         margin-top: 0;
     }
@@ -73,14 +74,23 @@
 .section__description {
     font-size: var(--text-style-18-font-size);
     font-family: var(--body-font);
+    max-width: 460px;
+    width: 100%;
+    @media screen and (max-width: 992px) {
+        max-width: none;
+    }
 }
 .section__description-bottom {
     margin-top: 36px;
-    font-size: var(--text-style-14-font-size);
-    width: 40%;
+    font-size: var(--text-style-18-font-size);
+    // width: 40%;
+    width: 100%;
+    max-width: 558px;
     font-family: var(--header-font);
     @media screen and (max-width: 768px) {
         margin-top: 30px;
+        font-size: var(--text-style-16-font-size);
+        line-height: 24px;
     }
 
     
