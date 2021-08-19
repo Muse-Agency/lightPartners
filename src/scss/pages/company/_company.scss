@@ -45,7 +45,8 @@ main.project-page.company{
     }
     .section__description{
         @media screen and (max-width: 1024px) {
-            max-width: none;
+            max-width: 500px;
+            width: 100%;
         }
     }
     p{
@@ -86,10 +87,26 @@ main.project-page.company{
         }
     }
     .header__banner-content{
+        
         background-image: url(../images/company__page/header__bg-company.png);
         background-repeat: no-repeat;
         @media screen and (max-width: 480px) {
+            max-height: 441px!important;
             background-image: url(../images/company__page/header-bg-mob.jpeg);
+        }
+    }
+    .header__banner.company--banner{
+        @media screen and (max-width: 768px) {
+        }
+        @media screen and (max-width: 480px) {
+            max-height: 441px!important;
+            background-size: contain;
+
+        }
+    }
+    .header__banner-wrapper{
+        @media screen and (max-width: 480px) {
+            max-height: 441px!important;
         }
     }
 }
