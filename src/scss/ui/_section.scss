@@ -79,6 +79,10 @@
     @media screen and (max-width: 992px) {
         max-width: none;
     }
+    @media screen and (max-width: 768px) {
+        font-size: var(--text-style-16-font-size);
+        line-height: 24px;
+    }
 }
 .section__description-bottom {
     margin-top: 36px;

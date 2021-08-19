@@ -1,8 +1,77 @@
 /*==================== HOME NEWS ====================*/
+.news-list{
+    @media screen and (max-width: 768px) {
+        margin-top: 50px;
+    }
+    .subscribe__form-elements{
+        display: flex;
+        flex-direction: column;
+    }
+    .form__agreement{
+        line-height: 15.6px;
+            font-size: 13px;
+            max-width: 250px;
+            width: 100%;
+        @media screen and (max-width: 768px) {
+            line-height: 13.37px;
+            font-size: 12px;
+            order: 3;
+        }
+        @media screen and (max-width: 400px) {
+            max-width: 200px;
+            width: 100%;
+        }
+    }
+    .subscribe__form.subscribe__form--in-list .subscribe__form-title {
+        line-height: 38px;
+        @media screen and (max-width: 768px) {
+            line-height: 28px;
+            font-size: 25px;
+        }
+    }
+    .subscribe__form-subtitle{
+        max-width: 200px;
+            width: 100%;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 40px!important;
+        }
+    }
+    .subscribe__form-inputs{
+        position: relative;
+        @media screen and (max-width: 768px) {
+            &::before{
+                position: absolute;
+                content: 'Email';
+                font-family: var(--header-font);
+                top: -25px;
+                left: 0;
+                font-size: 14px;
+                color: #6D6D6D;
+            }
+        }
+    }
+    .form__group-input{
+        
+        &::placeholder{
+            @media screen and (max-width: 768px) {
+                opacity: 0;
+            }
+        }
+        
+        
+    }
+
 .news__container {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
     row-gap: 50px;
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 .news__image {
     height: 365px;
@@ -16,6 +85,10 @@
     font-size: var(--h3-font-size);
     margin-bottom: 25px;
     position: relative;
+    @media screen and (max-width: 768px) {
+        font-size: var(--h4-font-size);
+        margin-bottom: 0;
+    }
 }
 
 .news__preview {
@@ -28,16 +101,29 @@
 }
 
 .news__subscribe {
-    display: flex;
     align-items: center;
     background-color: var(--white-color);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     color: var(--black-color);
     height: 100%;
     padding: 30px;
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        padding: 46px 15px;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 580px) {
+        display: block;
+        // justify-content: flex-start;
+
+    }
 }
 .subscribe__form.subscribe__form--in-list .subscribe__form-title {
     font-size: 34px;
+    
 }
 .subscribe__form.subscribe__form--in-list .subscribe__form-subtitle {
     margin-top: 10px;
@@ -47,10 +133,20 @@
 
 .subscribe__form.subscribe__form--in-list .subscribe__buttons {
     margin-top: 25px;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+    .button.button--red{
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    
 }
 
 .news {
     .lightning_news__subscribe {
         margin-top: 40px;
     }
+}
 }
