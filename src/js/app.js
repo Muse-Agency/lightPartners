@@ -2,6 +2,7 @@ import '../scss/app.scss';
 import './ui/header';
 import scrollTable from './ui/scrollTable';
 
+scrollTable();
 
 /*==================== ACCORDION ADDITIONALS ====================*/
 const accordionHeaders = document.querySelectorAll('.accordion__header');
@@ -143,5 +144,3 @@ if (matchingContent) {
 
     window.onscroll = function () { stickyMatching() };
 }
-
-scrollTable();

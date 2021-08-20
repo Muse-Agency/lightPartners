@@ -9,3 +9,21 @@ window.addEventListener("scroll", () => {
         header.classList.remove("header_sticky")
     }
 })
+
+const controlMobileMenu = () =>{
+    const btnOpen = document.getElementById('btn_open');
+    const btnClose = document.getElementById('btn_close');
+    const mobileMenu = document.getElementById('burger-menu');
+    const bodyTag = document.getElementById('bodyTag')
+
+    btnOpen.addEventListener('click', function(){
+        mobileMenu.classList.toggle('active');
+        bodyTag.classList.toggle('active');
+    })
+    btnClose.addEventListener('click', function(){
+        mobileMenu.classList.toggle('active');
+        bodyTag.classList.toggle('active');
+    })
+}
+
+controlMobileMenu();

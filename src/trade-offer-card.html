@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body id="bodyTag">
     <!--==================== HEADER ====================-->
     <header class="header__top-wrap header_bg-black js--header">
         <div class="header__top flex">
@@ -20,6 +20,9 @@
                 <a href="/" style="background-image: url('./images/header__logo.svg');" class="header__logo-img"></a>
             </div>
             <nav class="header__nav">
+
+
+
                 <ul class="nav__list flex">
                     <li class="nav__item">
                         <a href="#" class="nav__link clickable-element">Компания</a>
@@ -40,12 +43,78 @@
                         <a href="#" class="nav__link clickable-element">Контакты</a>
                     </li>
                 </ul>
+
+                <ul class="nav__list-mob flex">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/search__icon.svg" alt="search">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/phone__icon.svg" alt="phone">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/cart__icon.svg" alt="cart">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/login__icon.svg" alt="login">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <button id="btn_open" href="#" class="nav__link clickable-element">
+                            <img src="./images/header/burger__icon.svg" alt="burger">
+                        </button>
+                    </li>
+                </ul>
             </nav>
-            <div class="header__info flex">
-                <div class="header__contacts">
-                    <div>+7 495 77-611-88</div>
-                    <div><a href="mailto:order@lightpartners.ru">order@lightpartners.ru</a></div>
+
+            <div class="burger-menu" id="burger-menu">
+                <div class="container">
+                    <div class="burger-menu__wrapper">
+                        <button id="btn_close" class="burger-menu__btn-close"></button>
+                        <img class="burger-menu__logo" src="./images/header__logo.svg" alt="logo">
+                        <nav class="burger-menu__nav">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Компания</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Услуги</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Бренды</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Каталог</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Проекты</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu__contacts-box">
+                            <a href="tel:+74957761188" class="burger-menu__link-contact">+7 495 77-611-88</a>
+                            <a href="email:+order@lightpartners.ru" class="burger-menu__link-contact">order@lightpartners.ru</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+
+            <!-- <div class="header__info flex"> -->
+            <div class="header__info grid">
+                <!-- <div class="header__contacts"> -->
+                    <div class="header__info-number">+7 495 77-611-88</div>
+                    <div class="header__info-email"><a href="mailto:order@lightpartners.ru">order@lightpartners.ru</a></div>
+                <!-- </div> -->
                 <div class="header__search_account flex">
 
                     <form action="#" class="header__search_form">
