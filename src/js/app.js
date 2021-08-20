@@ -2,7 +2,7 @@ import '../scss/app.scss';
 import './ui/header';
 import scrollTable from './ui/scrollTable';
 
-scrollTable();
+// scrollTable();
 
 /*==================== ACCORDION ADDITIONALS ====================*/
 const accordionHeaders = document.querySelectorAll('.accordion__header');
