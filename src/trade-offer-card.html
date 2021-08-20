@@ -12,7 +12,7 @@
 </head>
 
 
-<body>
+<body id="bodyTag">
     <!--==================== HEADER ====================-->
     <header class="header__top-wrap header_bg-black js--header">
         <div class="header__top flex">
@@ -20,6 +20,9 @@
                 <a href="/" style="background-image: url('./images/header__logo.svg');" class="header__logo-img"></a>
             </div>
             <nav class="header__nav">
+
+
+
                 <ul class="nav__list flex">
                     <li class="nav__item">
                         <a href="#" class="nav__link clickable-element">Компания</a>
@@ -40,12 +43,78 @@
                         <a href="#" class="nav__link clickable-element">Контакты</a>
                     </li>
                 </ul>
+
+                <ul class="nav__list-mob flex">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/search__icon.svg" alt="search">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/phone__icon.svg" alt="phone">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/cart__icon.svg" alt="cart">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link clickable-element">
+                            <img src="./images/header/login__icon.svg" alt="login">
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <button id="btn_open" href="#" class="nav__link clickable-element">
+                            <img src="./images/header/burger__icon.svg" alt="burger">
+                        </button>
+                    </li>
+                </ul>
             </nav>
-            <div class="header__info flex">
-                <div class="header__contacts">
-                    <div>+7 495 77-611-88</div>
-                    <div><a href="mailto:order@lightpartners.ru">order@lightpartners.ru</a></div>
+
+            <div class="burger-menu" id="burger-menu">
+                <div class="container">
+                    <div class="burger-menu__wrapper">
+                        <button id="btn_close" class="burger-menu__btn-close"></button>
+                        <img class="burger-menu__logo" src="./images/header__logo.svg" alt="logo">
+                        <nav class="burger-menu__nav">
+                            <ul class="burger-menu__list">
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Компания</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Услуги</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Бренды</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Каталог</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Проекты</a>
+                                </li>
+                                <li class="burger-menu__item">
+                                    <a href="" class="burger-menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu__contacts-box">
+                            <a href="tel:+74957761188" class="burger-menu__link-contact">+7 495 77-611-88</a>
+                            <a href="email:+order@lightpartners.ru" class="burger-menu__link-contact">order@lightpartners.ru</a>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+
+            <!-- <div class="header__info flex"> -->
+            <div class="header__info grid">
+                <!-- <div class="header__contacts"> -->
+                    <div class="header__info-number">+7 495 77-611-88</div>
+                    <div class="header__info-email"><a href="mailto:order@lightpartners.ru">order@lightpartners.ru</a></div>
+                <!-- </div> -->
                 <div class="header__search_account flex">
 
                     <form action="#" class="header__search_form">
@@ -88,7 +157,7 @@
         <div class="main__container container">
 
             <div class="breadcrumbs">
-                <ul class="breadcrumbs__nav">
+                <ul class="breadcrumbs__nav card-product__breadcrumbs">
                     <li class="breadcrumb__item"><a href="/" class="breadcrumb__link">Главная</a></li>
                     <li class="breadcrumb__item"><a href="/catalog-1.html" class="breadcrumb__link">Каталог</a></li>
                     <li class="breadcrumb__item"><a href="/catalog-2.html" class="breadcrumb__link">Декоративный
@@ -111,12 +180,13 @@
                                     class="card_product__image-link"
                                     style="background-image: url('./images/catalog__pages/card__product/1.png');"></div>
                                 <div id="main-image-product" data-img="./images/catalog__pages/card__product/main.png"
-                                    class="card_product__image-link--main"
-                                    style="background-image: url('./images/catalog__pages/card__product/main.png');">
+                                    class="card_product__image-link--main">
+                                    <img src="./images/catalog__pages/card__product/main.png" alt="">
                                 </div>
                                 <div data-img="./images/catalog__pages/card__product/2.png"
                                     class="card_product__image-link"
-                                    style="background-image: url('./images/catalog__pages/card__product/2.png');"></div>
+                                    style="background-image: url('./images/catalog__pages/card__product/2.png');">
+                                </div>
                                 <div data-img="./images/catalog__pages/card__product/3.png"
                                     class="card_product__image-link"
                                     style="background-image: url('./images/catalog__pages/card__product/3.png');"></div>
@@ -371,9 +441,15 @@
                         </div>
                     </div>
 
-                    <section class="section_inner">
-                        <h3 class="section_inner__title">Модификации серии</h3>
-                        <div class="section_inner__content">
+                    <section  class="section_inner product-card__table">
+                        <div class="section_inner__title-box">
+                            <h3 class="section_inner__title">Модификации серии</h3>
+                            <div class="product-card__table-btns">
+                                <button id="button_one" class="product-card__table-btn"></button>
+                                <button id="button_two" class="product-card__table-btn"></button>
+                        </div>
+                    </div>
+                        <div id="table" class="section_inner__content">
                             <div class="modifications">
                                 <table class="modifications__table">
                                     <thead>
@@ -497,7 +573,7 @@
                     </section>
 
 
-                    <section class="section_inner">
+                    <section class="section_inner card-product-box">
                         <h3 class="section_inner__title">Товары этой серии</h3>
                         <div class="section_inner__content">
                             <div class="products__container product_cards__list grid">
