@@ -1,5 +1,6 @@
 import '../scss/app.scss';
 import './ui/header';
+import scrollTable from './ui/scrollTable';
 
 
 /*==================== ACCORDION ADDITIONALS ====================*/
@@ -142,3 +143,5 @@ if (matchingContent) {
 
     window.onscroll = function () { stickyMatching() };
 }
+
+scrollTable();
