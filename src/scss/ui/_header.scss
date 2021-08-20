@@ -509,7 +509,37 @@
 }
 
 
-
+.services-body{
+    .header__banner-content{
+        background-image: url(../images/services/bg_desktop.jpeg);
+        @media screen and (max-width: 768px) {
+            max-height: 566px;
+        }
+    }
+    .header__banner-container{
+        
+        @media screen and (max-width: 768px) {
+            padding-top: 100px;
+        }
+    }
+    .header__banner.company--banner{
+        @media screen and (max-width: 768px) {
+            height: 566px;
+            max-height: none;
+        }
+    }
+    .header__banner-title{
+        width: 100%;
+        max-width: 952px;
+        font-size: 56px;
+        line-height: 61.6px;
+        font-weight: 500;
+        @media screen and (max-width: 768px) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+}
 
 
 .burger-menu {

@@ -23,6 +23,9 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
+    @media screen and (max-width: 768px) {
+        overflow: visible;
+    }
 }
 .direction__categories {
     position: absolute;
@@ -34,6 +37,10 @@
     padding: 25px 0;
     transform: translateY(100%);
     transition: 0.3s;
+    @media screen and (max-width: 768px) {
+        visibility: hidden;
+        position: relative;
+    }
 }
 .direction__sections {
     grid-template-columns: repeat(2, 1fr);
@@ -46,8 +53,23 @@
 }
 .direction__data:hover .direction__categories {
     transform: translateY(0);
+    @media screen and (max-width: 768px) {
+        bottom: -100%;
+    }
+    
 }
 
 .direction__data.projects__consultation--form {
     order: 6;
+}
+.direction__data:hover{
+
+    @media screen and (max-width: 768px) {
+        position: relative;
+        padding-bottom: 250px;
+        overflow: visible;
+        .direction__categories{
+            visibility: visible;
+        }
+    }
 }
