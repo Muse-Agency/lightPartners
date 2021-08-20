@@ -3,15 +3,23 @@
     margin-bottom: 60px;
     margin-top: 30px;
 }
+
 .breadcrumbs__nav {
     display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 1280px) {
+        padding-left: 8px;
+    }
 }
-.breadcrumb__item + .breadcrumb__item {
+
+.breadcrumb__item+.breadcrumb__item {
     margin-left: 5px;
     padding-left: 5px;
     position: relative;
 }
-.breadcrumb__item + .breadcrumb__item::before {
+
+.breadcrumb__item+.breadcrumb__item::before {
     content: "|";
     display: inline-block;
     position: absolute;
@@ -21,10 +29,11 @@
 
 .breadcrumb__link,
 .breadcrumb__current,
-.breadcrumb__item + .breadcrumb__item::before {
+.breadcrumb__item+.breadcrumb__item::before {
     font-size: var(--text-style-14-font-size);
 }
+
 .breadcrumb__link,
-.breadcrumb__item + .breadcrumb__item::before {
+.breadcrumb__item+.breadcrumb__item::before {
     color: var(--grey-color);
 }

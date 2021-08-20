@@ -309,7 +309,7 @@
         }
     }
 }
-.card-product-box{
+// .card-product-box{
     .product_card__pic{
         @media screen and (max-width: 768px) {
             display: flex;
@@ -342,9 +342,5 @@
         }
     }
 
-    .product_card__attribute{
-        @media screen and (max-width: 768px) {
-            // justify-content: center;
-        }
-    }
-}
+    
+// }
