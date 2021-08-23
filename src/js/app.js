@@ -27,6 +27,34 @@ if (headerSlider) {
     });
 }
 
+// Swiper main-header
+
+const main_swiper = new Swiper ('.headerSwiper',{
+    autoplay:{
+        delay: 2000,
+        disableOnInteraction: false,
+        
+    },
+    
+
+    breakpoints:{
+        320: {
+            slidesPerView: 1,
+            
+        },
+
+        768:{
+            slidesPerView: 2,
+        },
+
+        1230:{
+            enabled: false,
+            slidesPerView: 3,
+            spaceBetween: 20,
+        }
+    }
+})
+
 /*== HOVER IMAGE SLIDER ==*/
 const imgSections = document.querySelectorAll('.product_card__images-section');
 function hoverSection() {

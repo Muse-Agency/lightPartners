@@ -274,3 +274,13 @@
     
 }
 
+.social__item{
+    &:hover{
+        transition: all .5s ease;
+        .footer__social-icon{
+            fill: #AFAFAF;
+            transition: all .5s ease;
+        }
+    }
+    
+}
