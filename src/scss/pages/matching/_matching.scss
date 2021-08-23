@@ -1,12 +1,81 @@
 /*==================== MATCHING PAGE ====================*/
 .matching__content {
     grid-template-columns: 1fr 4fr;
+    position: relative;
 }
 
 .matching__header {
     height: 290px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 1300px) {
+        height: 220px;
+        // position: absolute!important;
+    }
+}
+.filter{
+    @media screen and (max-width: 1300px) {
+        position: absolute!important;
+        top: 210px;
+        flex-direction: row;
+        z-index: 999999;
+    }
+    &__link-two{
+        @media screen and (max-width: 1300px) {
+            margin-top: 0!important;
+            margin-left: 20px;
+        }
+    }
+    .matching__different_link.matching__action_link,.matching__add_link.matching__action_link{
+        @media screen and (max-width: 1300px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    
+}
+.filter__characteristics{
+    // display: none!important;
+    @media screen and (max-width: 1300px) {
+        position: absolute!important;
+        background-color: #FFFFFF;
+        top: 190px;
+        row-gap: 28px!important;
+        margin-top: 0;
+        // z-index: 9999999;
+    }
+    .matching__attribute{
+        @media screen and (max-width: 1300px) {
+            font-size: 12px!important;
+            line-height: 16px!important;
+        }
+    }
+}
+
+
+
+.matching-btn{
+    @media screen and (max-width: 1300px) {
+        display: none;
+    }
+}
+
+.matching-slider-wrapper{
+    .matching__attributes{
+        
+        @media screen and (max-width: 1300px) {
+            row-gap: 31px;
+            padding-left: 0!important;
+            border: none!important;
+        }
+    }
+    
+    .matching__attribute{
+        &:not(:last-child){
+            // margin-bottom: 30px;
+        }
+    }
 }
 
 .matching__header_sticky {
@@ -52,6 +121,13 @@
     margin-top: 40px;
 }
 
+.matching__attribute{
+    @media screen and (max-width: 1300px) {
+        font-size: 9px;
+        line-height: 12px;
+    }
+}
+
 .matching__titles .matching__attribute {
     font-weight: var(--font-medium);
 }
@@ -76,6 +152,20 @@
     width: 100%;
     object-position: 80%;
     margin-bottom: 21px;
+
+    @media screen and (max-width: 1300px) {
+        width: 140px;
+        height: 110px;
+    }
+}
+
+.matching__product-link{
+    @media screen and (max-width: 1300px) {
+        font-size: 12px;
+        line-height: 15px;
+        max-width: 140px;
+        width: 100%;
+    }
 }
 
 .matching__product-title {

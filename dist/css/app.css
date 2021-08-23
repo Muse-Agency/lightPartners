@@ -4985,6 +4985,7 @@ main.project-page.company .company__img-box-two {
 /*==================== MATCHING PAGE ====================*/
 .matching__content {
   grid-template-columns: 1fr 4fr;
+  position: relative;
 }
 
 .matching__header {
@@ -4997,7 +4998,65 @@ main.project-page.company .company__img-box-two {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+@media screen and (max-width: 1300px) {
+  .matching__header {
+    height: 220px;
+  }
+}
 
+@media screen and (max-width: 1300px) {
+  .filter {
+    position: absolute !important;
+    top: 210px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    z-index: 999999;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .filter__link-two {
+    margin-top: 0 !important;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .filter .matching__different_link.matching__action_link, .filter .matching__add_link.matching__action_link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .filter__characteristics {
+    position: absolute !important;
+    background-color: #FFFFFF;
+    top: 190px;
+    row-gap: 28px !important;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .filter__characteristics .matching__attribute {
+    font-size: 12px !important;
+    line-height: 16px !important;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .matching-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .matching-slider-wrapper .matching__attributes {
+    row-gap: 31px;
+    padding-left: 0 !important;
+    border: none !important;
+  }
+}
 .matching__header_sticky {
   position: fixed;
   top: -100%;
@@ -5048,6 +5107,13 @@ main.project-page.company .company__img-box-two {
   margin-top: 40px;
 }
 
+@media screen and (max-width: 1300px) {
+  .matching__attribute {
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+
 .matching__titles .matching__attribute {
   font-weight: var(--font-medium);
 }
@@ -5074,6 +5140,21 @@ main.project-page.company .company__img-box-two {
   -o-object-position: 80%;
      object-position: 80%;
   margin-bottom: 21px;
+}
+@media screen and (max-width: 1300px) {
+  .matching__product-img {
+    width: 140px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .matching__product-link {
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 140px;
+    width: 100%;
+  }
 }
 
 .matching__product-title {
