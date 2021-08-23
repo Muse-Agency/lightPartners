@@ -8,6 +8,10 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin-bottom: 30px;
+    
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: 1fr;
+    }
 }
 .project__link {
     height: 370px;
@@ -49,6 +53,10 @@
 }
 .projects__anonce {
     grid-template-columns: 1fr 1fr;
+
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 .projects__anonce-text {
     font-size: var(--text-style-16-font-size);
@@ -58,4 +66,10 @@
 }
 .projects__anonce-buttons {
     text-align: right;
+}
+
+.projects__anonce-button{
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
 }

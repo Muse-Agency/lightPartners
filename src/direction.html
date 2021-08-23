@@ -101,7 +101,8 @@
                     Подбор и поставка светового оборудования
                 </h3>
                 <div class="direction-cards__item-pic">
-                    <img src="./images/direction-page/card0.jpg" alt="Фото">
+                    <img class="direction-cards__img-desktop" src="./images/direction-page/card0.jpg" alt="Фото">
+                    <img class="direction-cards__img-mobile" src="./images/services/section1_img-one.jpeg" alt="Фото">
                 </div>
             </li>
             <li class="direction-cards__item">
@@ -109,7 +110,8 @@
                     Проектирование освещения
                 </h3>
                 <div class="direction-cards__item-pic">
-                    <img src="./images/direction-page/card1.jpg" alt="Фото">
+                    <img class="direction-cards__img-desktop" src="./images/direction-page/card1.jpg" alt="Фото">
+                    <img class="direction-cards__img-mobile" src="./images/services/section1_img-two.jpeg" alt="Фото">
                 </div>
             </li>
             <li class="direction-cards__item">
@@ -117,7 +119,8 @@
                     Реализация проекта
                 </h3>
                 <div class="direction-cards__item-pic">
-                    <img src="./images/direction-page/card2.jpg" alt="Фото">
+                    <img class="direction-cards__img-desktop" src="./images/direction-page/card2.jpg" alt="Фото">
+                    <img class="direction-cards__img-mobile" src="./images/services/section1_img-three.jpeg" alt="Фото">
                 </div>
             </li>
             <li class="direction-cards__item">
@@ -125,7 +128,8 @@
                     Консалтинг и поддержка
                 </h3>
                 <div class="direction-cards__item-pic">
-                    <img src="./images/direction-page/card3.jpg" alt="Фото">
+                    <img class="direction-cards__img-desktop" src="./images/direction-page/card3.jpg" alt="Фото">
+                    <img class="direction-cards__img-mobile" src="./images/services/section1_img-four.jpeg" alt="Фото">
                 </div>
             </li>
         </ul>
@@ -142,7 +146,7 @@
                     <div class="additionals__container grid">
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div><a href="#" class="additional__img_link"><img
+                                <div class="additionals__img-box"><a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/1.svg" alt=""
                                             class="additional__img"></a></div>
 
@@ -157,7 +161,7 @@
                         </div>
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div><a href="#" class="additional__img_link"><img
+                                <div class="additionals__img-box"><a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/2.svg" alt=""
                                             class="additional__img"></a></div>
 
@@ -172,7 +176,7 @@
                         </div>
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div><a href="#" class="additional__img_link"><img
+                                <div class="additionals__img-box"><a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/3.svg" alt=""
                                             class="additional__img"></a></div>
 
@@ -188,7 +192,7 @@
                         </div>
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div><a href="#" class="additional__img_link"><img
+                                <div class="additionals__img-box"><a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/4.svg" alt=""
                                             class="additional__img"></a>
                                 </div>
@@ -205,7 +209,7 @@
                         </div>
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div><a href="#" class="additional__img_link"><img
+                                <div class="additionals__img-box"><a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/5.svg" alt=""
                                             class="additional__img"></a>
                                 </div>
@@ -223,7 +227,7 @@
                         </div>
                         <div class="additional__data">
                             <div class="additional__content flex">
-                                <div>
+                                <div class="additionals__img-box">
                                     <a href="#" class="additional__img_link"><img
                                             src="./images/page__services/additionals/6.svg" alt=""
                                             class="additional__img"></a>
@@ -263,8 +267,8 @@
                 <div class="section__content">
                     <div class="consultation__wrapper">
                         <div class="consultation__container grid">
-                            <div>
-                                <h3 class="consultation_form__title">Заказать консультацию</h3>
+                            <h3 class="consultation_form__title">Заказать консультацию</h3>
+                            <div class="consultation__form-box">
                                 <form action="#" class="consultation__form form">
                                     <div class="form__group">
                                         <label for="name" class="form__group-label">Имя</label>
@@ -278,7 +282,7 @@
                                             <input type="text" id="phone" class="form__group-input">
                                         </div>
                                         <p class="form__agreement">Нажимая кнопку «Отправить»
-                                            вы соглашаетесь<br>на обработку <a href="#" target="_blank">персональных
+                                            вы соглашаетесь на обработку <a href="#" target="_blank">персональных
                                                 данных</a></p>
                                     </div>
                                     <div class="form__buttons form__buttons--vertical">
@@ -286,7 +290,7 @@
                                     </div>
                                 </form>
                             </div>
-                            <div>
+                            <div class="consultation__description-box">
                                 <p class="consultation__description">
                                     Обращаясь к нам по любым вопросов светодизайна и светового оборудования
                                     вы гарантировано получите консультацию
@@ -317,35 +321,37 @@
                 <div class="section__content">
 
                     <div class="direction_description__container1 grid">
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/1.png');"></div>
-                        <div></div>
+                        <div class="direction_description__image">
+                            <img src="./images/direction-page/1.png" alt="">
+                        </div>
                     </div>
-
                     <div class="direction_description__container2 grid">
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/2.png');"></div>
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/3.png');"></div>
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/4.png');"></div>
+                        <div class="direction_description__image">
+                            <img src="./images/direction-page/2.png" alt="">
+                        </div>
+                        <div class="direction_description__image">
+                            <img src="./images/direction-page/3.png" alt="">
+                        </div>
+                        <div class="direction_description__image">
+                            <img src="./images/direction-page/4.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="direction_description__container3 grid">
-                        <div class="direction_description__text1">
+                    <div class="direction_description__container5 grid one">
+                        <div class="direction_description__text2">
                             <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
                                 officia
                                 consequat duis enim velit
                                 mollit. Exercitation veniam consequat sunt nostrud amet.</p>
                         </div>
-                        <div class="direction_description__text1"></div>
                     </div>
 
                     <div class="direction_description__container4 grid">
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/5.png');"></div>
-                        <div class="direction_description__image"
-                            style="background-image: url('./images/direction-page/6.png');"></div>
+                        <div class="direction_description__image">
+                            <img src="./images/direction-page/5.png" alt="">
+                        </div>
+                        <div class="direction_description__image">
+                        <img src="./images/direction-page/6.png" alt=""></div>
                     </div>
                     <div class="direction_description__container5 grid">
                         <div class="direction_description__text2">
@@ -439,8 +445,8 @@
                     <div class="directions__container grid">
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Магазины</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/0.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/0.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -477,8 +483,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Уличное освещение</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/1.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/1.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -515,8 +521,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Офисы и безнес центры</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/2.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/2.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -553,8 +559,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Промышленное освещение</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/3.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/3.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -591,8 +597,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Рестораны и кафе</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/4.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/4.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -629,8 +635,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Квартиры и жилые помещения</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/5.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/5.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -667,8 +673,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Музеи и выставки</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/6.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/6.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -705,8 +711,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Частные дома и коттеджи</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/7.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/7.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
@@ -743,8 +749,8 @@
                         </div>
                         <div class="direction__data">
                             <h4 class="direction__title"><a href="#">Архитектурное освещение</a></h4>
-                            <div class="direction__img"
-                                style="background-image: url('./images/page__services/directions/8.png');">
+                            <div class="direction__img">
+                                <img class="img-desktop" src="./images/page__services/directions/8.png" alt="">
                                 <div class="direction__categories">
                                     <ul class="direction__sections grid">
                                         <li class="direction__section">
