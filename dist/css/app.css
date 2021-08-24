@@ -2697,7 +2697,7 @@ body.active {
   }
 }
 
-.favourites, .comparison {
+.favourites, .comparison, .fast-order {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -2705,7 +2705,7 @@ body.active {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.favourites__content, .comparison__content {
+.favourites__content, .comparison__content, .fast-order__content {
   margin-top: 120px;
   background: #FFFFFF;
   max-width: 700px;
@@ -2713,30 +2713,30 @@ body.active {
   padding: 50px 0;
 }
 @media screen and (max-width: 1100px) {
-  .favourites__content, .comparison__content {
+  .favourites__content, .comparison__content, .fast-order__content {
     margin-top: 72px;
     padding: 20px 0;
   }
 }
 
-.comparison .modal__item .btn__close {
+.comparison .modal__item .btn__close, .fast-order .modal__item .btn__close {
   position: static;
   width: 10px;
   height: 10px;
   background-size: contain;
 }
 @media screen and (max-width: 720px) {
-  .comparison .modal__item .btn__close {
+  .comparison .modal__item .btn__close, .fast-order .modal__item .btn__close {
     width: 12px;
     height: 12px;
   }
 }
 @media screen and (max-width: 520px) {
-  .comparison .modal__item-box {
+  .comparison .modal__item-box, .fast-order .modal__item-box {
     padding-right: 16px;
   }
 }
-.comparison__btns {
+.comparison__btns, .fast-order__btns {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2750,26 +2750,39 @@ body.active {
   margin-top: 15px;
 }
 @media screen and (max-width: 720px) {
-  .comparison__btns {
+  .comparison__btns, .fast-order__btns {
     padding: 0 10px;
     margin-top: 10px;
   }
 }
-.comparison__btns .modal__btn-compare {
+.comparison__btns .modal__btn-compare, .fast-order__btns .modal__btn-compare {
   font-family: var(--header-font);
   font-size: var(--text-style-20-font-size);
   line-height: 24px;
   font-weight: 600;
 }
 @media screen and (max-width: 720px) {
-  .comparison__btns .modal__btn-compare {
+  .comparison__btns .modal__btn-compare, .fast-order__btns .modal__btn-compare {
     font-size: var(--text-style-18-font-size);
     line-height: 22px;
   }
 }
-.comparison__btns .modal__btn-clear {
+.comparison__btns .modal__btn-clear, .fast-order__btns .modal__btn-clear {
   margin-top: 0;
   padding-right: 0;
+}
+
+.fast-order .comparison__btns {
+  margin-bottom: 60px;
+}
+.fast-order .comparison__btns .modal__btn-compare {
+  font-size: var(--text-style-20-font-size);
+  padding-left: 66px;
+}
+@media screen and (max-width: 720px) {
+  .fast-order .comparison__btns .modal__btn-compare {
+    padding-left: 29px;
+  }
 }
 
 .modal__container {
@@ -2808,6 +2821,7 @@ body.active {
 @media screen and (max-width: 720px) {
   .modal__top {
     padding: 0 20px 0 9px;
+    margin-bottom: 20px;
   }
 }
 .modal__top .btn__close {
@@ -2988,6 +3002,52 @@ body.active {
   .modal .modal__btn-like {
     height: 15px;
     width: 15px;
+  }
+}
+.modal .form {
+  width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .modal .form {
+    padding: 0 10px;
+  }
+}
+.modal .form__title {
+  font-family: var(--header-font);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: var(--font-medium);
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .modal .form__title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-bold);
+    margin-bottom: 25px;
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .form__fields {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .form__fields .form__group:nth-child(3) {
+    grid-column: 1/2;
+  }
+}
+.modal .form__fields .form__group-input {
+  resize: vertical;
+}
+@media screen and (max-width: 768px) {
+  .modal .form__agreement {
+    max-width: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal .form .button.button--red {
+    width: 100%;
   }
 }
 
