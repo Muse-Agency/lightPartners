@@ -2381,8 +2381,6 @@ body.active {
   z-index: var(--z-modal);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  opacity: 0;
-  visibility: hidden;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -2566,6 +2564,79 @@ body.active {
 .active-modal {
   visibility: visible;
   opacity: 1;
+}
+
+.gratitude__content {
+  background: #000000;
+  background-image: url(../images/lamp.bc36d0.svg);
+  background-repeat: no-repeat;
+  height: 300px;
+  max-width: 570px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 580px) {
+  .gratitude__content {
+    height: 488px;
+  }
+}
+.gratitude__content .btn__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADWSURBVHgBlZLLDYMwDEBJzABlAy5wYIveEWWDdoOuwAZdgW4ALNCOQXPqCF0gSe1KkVKUH5b4xPF7chSzruuunPN5mqZ3tiP6vi+VUieOr0JK+aDEHpgY/C1ACPGs67rQWt+appnXdf2kwIyx+7IsA1AyVbKFKQdmMyZxwX+CkMQHUzBXq23bDlh8BoAjrX2wV2BLfkUemIL7BHmej/g50INzMvrqnB3YZ8Y5ycxxXMMGIZjajt0OhGCTD0kgBsckkAKHJCwVtsOeE6iq6oKLVyq86aT8AuG25vd0nKbmAAAAAElFTkSuQmCC);
+}
+@media screen and (max-width: 580px) {
+  .gratitude__content .btn__close {
+    right: 13px;
+  }
+}
+.gratitude .wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.gratitude__title {
+  font-family: var(--header-font);
+  font-weight: var(--font-bold);
+  font-size: var(--text-style-48-font-size);
+  line-height: 58.51px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.gratitude__text {
+  font-family: var(--header-font);
+  font-size: var(--text-style-14-font-size);
+  line-height: 17px;
+  color: #B4B4B4;
+  max-width: 220px;
+  width: 100%;
+}
+.gratitude .social__links {
+  width: 216px;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
 }
 
 /*==================== MODIFICATIONS-TABLE ====================*/
