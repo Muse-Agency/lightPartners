@@ -122,7 +122,7 @@ if (matchingContent) {
         loop: false,
         grabCursor: true,
         spaceBetween: 15,
-        slidesPerView: 4,
+        // slidesPerView: 4,
         navigation: {
             nextEl: '.matching-btn-next',
             prevEl: '.matching-btn-prev',
@@ -131,6 +131,17 @@ if (matchingContent) {
             // 568: {
             //     slidesPerView: 4
             // }
+            320:{
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            480:{
+                slidesPerView: 3,
+            },
+            768:{
+                slidesPerView: 4,
+                spaceBetween: 15,
+            },
         }
     });
 
