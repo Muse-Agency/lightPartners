@@ -58,6 +58,11 @@
 }
 .section__manufacturer_link {
     font-size: var(--text-style-24-font-size);
+    transition: all .2s ease;
+    &:hover{
+        transition: all .2s ease;
+        text-decoration: underline;
+    }
 }
 .section__picture {
     margin-top: 60px;

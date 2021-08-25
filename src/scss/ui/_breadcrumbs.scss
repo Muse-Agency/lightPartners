@@ -37,3 +37,11 @@
 .breadcrumb__item+.breadcrumb__item::before {
     color: var(--grey-color);
 }
+
+.breadcrumb__link{
+    transition: all .2s ease;
+    &:hover{
+        color: #6F6F6F;
+        transition: all .2s ease;
+    }
+}

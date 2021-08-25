@@ -29,31 +29,31 @@ if (headerSlider) {
 
 // Swiper main-header
 
-const main_swiper = new Swiper ('.headerSwiper',{
-    autoplay:{
-        delay: 2000,
-        disableOnInteraction: false,
+// const main_swiper = new Swiper ('.headerSwiper',{
+//     autoplay:{
+//         delay: 2000,
+//         disableOnInteraction: false,
         
-    },
+//     },
     
 
-    breakpoints:{
-        320: {
-            slidesPerView: 1,
+//     breakpoints:{
+//         320: {
+//             slidesPerView: 1,
             
-        },
+//         },
 
-        768:{
-            slidesPerView: 2,
-        },
+//         768:{
+//             slidesPerView: 2,
+//         },
 
-        1230:{
-            enabled: false,
-            slidesPerView: 3,
-            spaceBetween: 20,
-        }
-    }
-})
+//         1230:{
+//             enabled: false,
+//             slidesPerView: 3,
+//             spaceBetween: 20,
+//         }
+//     }
+// })
 
 /*== HOVER IMAGE SLIDER ==*/
 const imgSections = document.querySelectorAll('.product_card__images-section');
@@ -83,31 +83,53 @@ imgProductLinks.forEach(el => {
 
 
 /*==================== MODALS ====================*/
-const modalViews = document.querySelectorAll('.js-modal'),
+const modalViews = document.querySelector('.js-modal'),
     modalBtns = document.querySelectorAll('.js-modal-btn'),
-    modalCloses = document.querySelectorAll('.js-modal-close');
+    modalCloses = document.querySelectorAll('.js-modal-close'),
+    modalOverlay = document.querySelector('.overlay');
 
-let modal = function (modalClick) {
-    const modalTarget = document.getElementById(modalClick);
-    if (modalTarget) {
-        modalTarget.classList.add('active-modal');
-    }
-}
+    modalBtns.forEach((el)=>{
+        el.addEventListener('click', (e) =>{
+            let path = e.currentTarget.getAttribute('data-path');
+            modalViews.classList.add('active-modal');
+            document.querySelector(`[data-target='${path}']`).classList.add('active-window');
 
-modalBtns.forEach((modalBtn, i) => {
-    modalBtn.addEventListener('click', () => {
-        modal(modalBtn.dataset.target);
-    });
-});
+        })  
+    })
 
-modalCloses.forEach((modalClose, i) => {
-    modalClose.addEventListener('click', () => {
-        modalViews.forEach(modalView => {
-            modalView.classList.remove('active-modal');
-        });
-    });
-});
+    modalOverlay.addEventListener('click', (e)=>{
+        if(e.target == modalOverlay){
+            modalViews.classList.remove('active-modal');
+        }
+    })
 
+    modalCloses.forEach((closeBtn)=>{
+        closeBtn.addEventListener('click', () =>{
+            modalViews.classList.remove('active-modal');
+        })
+    })
+
+
+// let modal = function (modalClick) {
+//     const modalTarget = document.getElementById(modalClick);
+//     if (modalTarget) {
+//         modalTarget.classList.add('active-modal');
+//     }
+// }
+
+// modalBtns.forEach((modalBtn, i) => {
+//     modalBtn.addEventListener('click', () => {
+//         modal(modalBtn.dataset.target);
+//     });
+// });
+
+// modalCloses.forEach((modalClose, i) => {
+//     modalClose.addEventListener('click', () => {
+//         modalViews.forEach(modalView => {
+//             modalView.classList.remove('active-modal');
+//         });
+//     });
+// });
 
 /*======== MATCHING PRODUCTS ========*/
 //Sticky matching header
@@ -183,3 +205,19 @@ if (matchingContent) {
 
     window.onscroll = function () { stickyMatching() };
 }
+
+
+// Card product slider
+
+const swiperImages = new Swiper(".imagesSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 50,
+});
+
+const mainImg = document.querySelector('#main-image-product');
+const imagesSwiper = document.querySelector('.img-slider-window');
+
+mainImg.addEventListener('click', ()=>{
+    modalViews.classList.add('active-modal');
+    imagesSwiper.classList.add('active-window');
+})

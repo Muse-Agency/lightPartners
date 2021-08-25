@@ -101,6 +101,7 @@
     // flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 75px;
+    row-gap: 20px;
     height: 100px;
 
     @media screen and (max-width: 1000px) {
@@ -111,7 +112,7 @@
         height: 100%;
     }
     @media screen and (max-width: 640px) {
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 24px;
     }
     // &-item {
