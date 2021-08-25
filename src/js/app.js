@@ -1,6 +1,9 @@
 import '../scss/app.scss';
 import './ui/header';
 import scrollTable from './ui/scrollTable';
+import './ui/fslightbox';
+
+
 
 // scrollTable();
 
@@ -209,15 +212,16 @@ if (matchingContent) {
 
 // Card product slider
 
-const swiperImages = new Swiper(".imagesSwiper", {
-    slidesPerView: 1,
-    spaceBetween: 50,
-});
+// const swiperImages = new Swiper(".imagesSwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 50,
+// });
 
-const mainImg = document.querySelector('#main-image-product');
-const imagesSwiper = document.querySelector('.img-slider-window');
+// const mainImg = document.querySelector('#main-image-product');
+// const imagesSwiper = document.querySelector('.img-slider-window');
 
-mainImg.addEventListener('click', ()=>{
-    modalViews.classList.add('active-modal');
-    imagesSwiper.classList.add('active-window');
-})
+// mainImg.addEventListener('click', ()=>{
+//     modalViews.classList.add('active-modal');
+//     imagesSwiper.classList.add('active-window');
+// })
+

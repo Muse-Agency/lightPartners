@@ -104,7 +104,7 @@
                 <div class="modal img-slider js-modal">
                     <div class="overlay">
                         <div class="img-slider-window window">
-                            <div class="swiper imagesSwiper">
+                            <div class="swiper-container imagesSwiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img src="./images/catalog__pages/card__product/main.png" alt="">
@@ -118,14 +118,6 @@
                                     <div class="swiper-slide">
                                         <img src="./images/catalog__pages/card__product/main.png" alt="">
                                     </div>
-
-
-                                    <!-- <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -136,6 +128,33 @@
 
                     <div class="card_product__main grid">
                         <div class="card_product__images--wrapper">
+                            <div class="card_product__images grid" id="images__gallery">
+                                <a data-fslightbox="gallery" href="./images/catalog__pages/card__product/1.png" class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/1.png"  alt="">
+                                </a>
+
+                                <a data-fslightbox="gallery" id="main-image-product" href="./images/catalog__pages/card__product/main.png"
+                                    class="card_product__image-link--main">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/main.png" alt="">
+                                </a>
+
+                                <a data-fslightbox="gallery" href="./images/catalog__pages/card__product/2.png"
+                                    class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/2.png" alt="">
+                                </a>
+                                <a data-fslightbox="gallery" href="./images/catalog__pages/card__product/3.png"
+                                    class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/3.png" alt="">
+                                </a>
+                                <a data-fslightbox="gallery" href="./images/catalog__pages/card__product/4.png"
+                                    class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/4.png" alt="">
+                                </a>
+
+
+                            </div>
+                        </div>
+                        <!-- <div class="card_product__images--wrapper">
                             <div class="card_product__images grid">
                                 <div data-img="./images/catalog__pages/card__product/1.png"
                                     class="card_product__image-link"
@@ -153,10 +172,8 @@
                                 <div data-img="./images/catalog__pages/card__product/4.png"
                                     class="card_product__image-link"
                                     style="background-image: url('./images/catalog__pages/card__product/4.png');"></div>
-
-
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="card_product__info">
                             <h1 class="card_product__title">Трековый светильник Magnetic CSMV5335MC0S</h1>
@@ -597,9 +614,9 @@
                                     </div>
                                 </div> -->
 
-                                
 
-                                
+
+
 
                                 <!-- <div class="modal" id="modal-success">
                                     <div class="modal__container modal__container--black modal__success_container grid">
@@ -658,15 +675,18 @@
                                     </div>
                                 </div> -->
 
-<!-- Спасибо -->
+                                <!-- Спасибо -->
 
                                 <div class="modal gratitude">
                                     <div class="gratitude__content">
                                         <button class="btn__close">
-                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <line class="btn__close-icon" x1="0.353553" y1="0.646447" x2="15.3536" y2="15.6464" stroke="#4D4D4D"/>
-                                                <line class="btn__close-icon" x1="0.646447" y1="15.6464" x2="15.6464" y2="0.646447" stroke="#4D4D4D"/>
-                                                </svg>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <line class="btn__close-icon" x1="0.353553" y1="0.646447" x2="15.3536"
+                                                    y2="15.6464" stroke="#4D4D4D" />
+                                                <line class="btn__close-icon" x1="0.646447" y1="15.6464" x2="15.6464"
+                                                    y2="0.646447" stroke="#4D4D4D" />
+                                            </svg>
                                         </button>
                                         <div class="container-modal">
                                             <div class="wrapper">
@@ -738,7 +758,7 @@
                                     </div>
                                 </div>
 
-<!-- Форма заявки -->
+                                <!-- Форма заявки -->
 
                                 <!-- <div class="modal application">
                                     <div class="application__content">
@@ -775,7 +795,7 @@
                                     
                                 </div> -->
 
-<!-- Избранное -->
+                                <!-- Избранное -->
 
                                 <!-- <div class="modal favourites">
                                     <div class="favourites__content">
@@ -882,7 +902,7 @@
                                     </div>
                                 </div> -->
 
-<!-- Сравнение -->
+                                <!-- Сравнение -->
 
                                 <!-- <div class="modal comparison">
                                     <div class="comparison__content">
@@ -1575,7 +1595,6 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<img src="./images/catalog__pages/card__product/main.png" alt="">
 </body>
 
 </html>

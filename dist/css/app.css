@@ -3495,6 +3495,9 @@ body.active {
     grid-template-columns: 1fr;
   }
 }
+.card_product__main .card_product__img {
+  height: 100%;
+}
 
 .card_product__images {
   background-color: var(--white-color);
