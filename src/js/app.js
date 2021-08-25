@@ -3,6 +3,17 @@ import './ui/header';
 import scrollTable from './ui/scrollTable';
 import './ui/fslightbox';
 
+const images = document.querySelectorAll('.card_product__image-link');
+
+const lightbox = new FsLightbox();
+
+
+images.forEach((image)=>{
+    image.addEventListener('click', () =>{
+        lightbox.props.sources = ['../images/catalog__pages/card__product/1.png','../images/catalog__pages/card__product/2.png','../images/catalog__pages/card__product/3.png','../images/catalog__pages/card__product/4.png','../images/catalog__pages/card__product/4.png','../images/catalog__pages/card__product/2.png','../images/catalog__pages/card__product/1.png'];
+        lightbox.open()
+    })
+})
 
 
 // scrollTable();
@@ -224,4 +235,6 @@ if (matchingContent) {
 //     modalViews.classList.add('active-modal');
 //     imagesSwiper.classList.add('active-window');
 // })
+
+
 

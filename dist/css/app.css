@@ -3497,6 +3497,7 @@ body.active {
 }
 .card_product__main .card_product__img {
   height: 100%;
+  width: 100% !important;
 }
 
 .card_product__images {
