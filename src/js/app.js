@@ -7,9 +7,10 @@ const images = document.querySelectorAll('.card_product__image-link');
 
 const lightbox = new FsLightbox();
 
-images.forEach((image)=>{
-    image.addEventListener('click', () =>{
-        lightbox.props.sources = ['../images/catalog__pages/card__product/1.png','../images/catalog__pages/card__product/2.png','../images/catalog__pages/card__product/3.png','../images/catalog__pages/card__product/4.png','../images/catalog__pages/card__product/4.png','../images/catalog__pages/card__product/2.png','../images/catalog__pages/card__product/1.png'];
+
+images.forEach((image) => {
+    image.addEventListener('click', () => {
+        lightbox.props.sources = ['../images/catalog__pages/card__product/1.png', '../images/catalog__pages/card__product/2.png', '../images/catalog__pages/card__product/3.png', '../images/catalog__pages/card__product/4.png', '../images/catalog__pages/card__product/4.png', '../images/catalog__pages/card__product/2.png', '../images/catalog__pages/card__product/1.png'];
         lightbox.open()
     })
 })
@@ -46,14 +47,14 @@ if (headerSlider) {
 //     autoplay:{
 //         delay: 2000,
 //         disableOnInteraction: false,
-        
+
 //     },
-    
+
 
 //     breakpoints:{
 //         320: {
 //             slidesPerView: 1,
-            
+
 //         },
 
 //         768:{
@@ -84,15 +85,15 @@ imgSections.forEach(el => {
     el.addEventListener('mouseover', hoverSection);
 });
 
-/*== CHANGE MAIN IMAGE PRODUCT ==*/
-const imgProductLinks = document.querySelectorAll('.card_product__image-link');
-const mainImage = document.getElementById('main-image-product');
-function setMainImage() {
-    mainImage.style.backgroundImage = 'url(' + this.dataset.img + ')';
-}
-imgProductLinks.forEach(el => {
-    el.addEventListener('click', setMainImage);
-});
+// /*== CHANGE MAIN IMAGE PRODUCT ==*/
+// const imgProductLinks = document.querySelectorAll('.card_product__image-link');
+// const mainImage = document.getElementById('main-image-product');
+// function setMainImage() {
+//     mainImage.style.backgroundImage = 'url(' + this.dataset.img + ')';
+// }
+// imgProductLinks.forEach(el => {
+//     el.addEventListener('click', setMainImage);
+// });
 
 
 /*==================== MODALS ====================*/
@@ -101,26 +102,26 @@ const modalViews = document.querySelector('.js-modal'),
     modalCloses = document.querySelectorAll('.js-modal-close'),
     modalOverlay = document.querySelector('.overlay');
 
-    modalBtns.forEach((el)=>{
-        el.addEventListener('click', (e) =>{
-            let path = e.currentTarget.getAttribute('data-path');
-            modalViews.classList.add('active-modal');
-            document.querySelector(`[data-target='${path}']`).classList.add('active-window');
+modalBtns.forEach((el) => {
+    el.addEventListener('click', (e) => {
+        let path = e.currentTarget.getAttribute('data-path');
+        modalViews.classList.add('active-modal');
+        document.querySelector(`[data-target='${path}']`).classList.add('active-window');
 
-        })  
     })
+})
 
-    modalOverlay.addEventListener('click', (e)=>{
-        if(e.target == modalOverlay){
-            modalViews.classList.remove('active-modal');
-        }
-    })
+modalOverlay.addEventListener('click', (e) => {
+    if (e.target == modalOverlay) {
+        modalViews.classList.remove('active-modal');
+    }
+})
 
-    modalCloses.forEach((closeBtn)=>{
-        closeBtn.addEventListener('click', () =>{
-            modalViews.classList.remove('active-modal');
-        })
+modalCloses.forEach((closeBtn) => {
+    closeBtn.addEventListener('click', () => {
+        modalViews.classList.remove('active-modal');
     })
+})
 
 
 // let modal = function (modalClick) {
@@ -166,14 +167,14 @@ if (matchingContent) {
             // 568: {
             //     slidesPerView: 4
             // }
-            320:{
+            320: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
-            480:{
+            480: {
                 slidesPerView: 3,
             },
-            768:{
+            768: {
                 slidesPerView: 4,
                 spaceBetween: 15,
             },
