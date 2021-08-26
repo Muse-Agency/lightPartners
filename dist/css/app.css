@@ -2745,6 +2745,11 @@ body.active {
   }
 }
 
+.fast-order {
+  opacity: 1 !important;
+  display: block !important;
+}
+
 .favourites, .comparison, .fast-order {
   -webkit-box-align: start;
       -ms-flex-align: start;
