@@ -916,6 +916,363 @@ button.swiper-pagination-bullet {
           transform: rotate(0deg);
 }
 
+.inner-form {
+  position: relative;
+}
+.inner-form .btn__close {
+  position: absolute;
+  z-index: 9999999;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+.overlay .b24-form,
+.bitrix__form .b24-form {
+  max-width: 600px;
+  width: 100%;
+}
+.overlay .b24-form-wrapper,
+.bitrix__form .b24-form-wrapper {
+  padding: 42px 134px;
+}
+@media screen and (max-width: 600px) {
+  .overlay .b24-form-wrapper,
+.bitrix__form .b24-form-wrapper {
+    padding: 0 10px;
+  }
+}
+.overlay .b24-form-header,
+.bitrix__form .b24-form-header {
+  border: none;
+  padding: 0;
+}
+.overlay .b24-form-header-title,
+.bitrix__form .b24-form-header-title {
+  text-align: left;
+  font: 28px/34px var(--header-font);
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .overlay .b24-form-header-title,
+.bitrix__form .b24-form-header-title {
+    font: 20px/28px var(--header-font);
+    font-weight: var(--font-bold);
+  }
+}
+.overlay .b24-form-content,
+.bitrix__form .b24-form-content {
+  padding: 0;
+}
+.overlay .b24-form-control-container,
+.bitrix__form .b24-form-control-container {
+  margin: 0;
+}
+.overlay .b24-form-field,
+.bitrix__form .b24-form-field {
+  margin-bottom: 0;
+}
+.overlay .b24-form-field-layout-section,
+.bitrix__form .b24-form-field-layout-section {
+  margin: 0;
+}
+.overlay .b24-form-control-label,
+.bitrix__form .b24-form-control-label {
+  display: none;
+}
+.overlay .b24-form-field-layout-section,
+.bitrix__form .b24-form-field-layout-section {
+  color: var(--semi-dark-grey-color);
+  margin-bottom: 10px;
+  font: 14px/16px var(--header-font);
+}
+.overlay .b24-form input[name=name],
+.overlay .b24-form input[name=phone],
+.bitrix__form .b24-form input[name=name],
+.bitrix__form .b24-form input[name=phone] {
+  padding: 0 20px;
+  background: #EAEAEA;
+  border-radius: 0;
+  min-height: 42px;
+  font: 14px/16px var(--header-font);
+}
+.overlay .b24-form input[name=name],
+.bitrix__form .b24-form input[name=name] {
+  margin-bottom: 20px;
+}
+.overlay .b24-form input[name=phone],
+.bitrix__form .b24-form input[name=phone] {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  .overlay .b24-form input[name=phone],
+.bitrix__form .b24-form input[name=phone] {
+    margin-bottom: 15px;
+  }
+}
+.overlay .b24-form input[type=checkbox],
+.bitrix__form .b24-form input[type=checkbox] {
+  display: none;
+}
+.overlay .b24-form-control-container,
+.bitrix__form .b24-form-control-container {
+  font: 12px/15px var(--header-font) !important;
+}
+.overlay .b24-form-control-desc,
+.bitrix__form .b24-form-control-desc {
+  font: 12px/15px var(--header-font) !important;
+  color: #6D6D6D;
+  opacity: 1 !important;
+}
+.overlay .b24-form-field-agreement-link,
+.bitrix__form .b24-form-field-agreement-link {
+  font: 12px/15px var(--header-font) !important;
+  color: #6D6D6D;
+  margin-bottom: 30px;
+  opacity: 1 !important;
+}
+.overlay .b24-form button[type=submit],
+.bitrix__form .b24-form button[type=submit] {
+  font: 16px/22px var(--body-font) !important;
+  margin-top: 30px;
+  max-width: 180px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .overlay .b24-form button[type=submit],
+.bitrix__form .b24-form button[type=submit] {
+    font: 20px/27px var(--body-font) !important;
+  }
+}
+
+.bitrix__form {
+  padding: 0 !important;
+}
+.bitrix__form .b24-form {
+  max-width: 600px;
+  width: 100%;
+}
+.bitrix__form .b24-form-wrapper {
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  .bitrix__form .b24-form-wrapper {
+    padding: 0 10px;
+  }
+}
+.bitrix__form .b24-form button[type=submit] {
+  font: 16px/22px var(--body-font) !important;
+  margin-top: 30px;
+  max-width: 180px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bitrix__form .b24-form button[type=submit] {
+    font: 16px/18px var(--body-font) !important;
+  }
+}
+
+.news__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.news__form .subscribe__form-header {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .news__form .subscribe__form-subtitle {
+    max-width: none !important;
+  }
+}
+.news__form .b24-form-content.b24-form-padding-side {
+  padding: 0;
+}
+.news__form button[type=submit] {
+  font: 22px/30px var(--body-font) !important;
+  max-width: 180px;
+  width: 100%;
+  border-radius: 0;
+  padding: 0;
+  height: 55px;
+}
+@media screen and (max-width: 880px) {
+  .news__form button[type=submit] {
+    max-width: none;
+    font: 20px/27px var(--body-font) !important;
+    height: 45px;
+  }
+}
+.news__form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+}
+@media screen and (max-width: 880px) {
+  .news__form form {
+    row-gap: 15px;
+  }
+}
+.news__form form > div:first-child {
+  grid-area: 1/1/2/2;
+}
+.news__form form > div:nth-child(2) {
+  grid-area: 2/1/3/2;
+}
+@media screen and (max-width: 880px) {
+  .news__form form > div:nth-child(2) {
+    grid-area: 3/1/4/2;
+  }
+}
+.news__form form > div .b24-form-btn-block {
+  padding: 0;
+  grid-area: 3/1/4/2;
+}
+@media screen and (max-width: 880px) {
+  .news__form form > div .b24-form-btn-block {
+    grid-area: 2/1/3/2;
+  }
+}
+
+.lightning_news__subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .subscribe__form-title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
+.lightning_news__subscribe .subscribe__form-header {
+  width: 100%;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .subscribe__form-header {
+    margin-bottom: 23px;
+  }
+}
+.lightning_news__subscribe .b24-form {
+  max-width: 600px;
+  width: 100%;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .b24-form {
+    max-width: none;
+  }
+}
+.lightning_news__subscribe .b24-form-wrapper {
+  min-height: 60px;
+}
+@media screen and (max-width: 600px) {
+  .lightning_news__subscribe .b24-form-wrapper {
+    padding: 0;
+  }
+}
+.lightning_news__subscribe .b24-form .b24-form-field.b24-form-field-agreement.b24-form-control-agreement {
+  width: 100%;
+}
+.lightning_news__subscribe .b24-form .b24-form-control-container.b24-form-control-icon-after,
+.lightning_news__subscribe .b24-form .b24-form-field.b24-form-field-email.b24-form-control-string {
+  margin-bottom: 0;
+}
+.lightning_news__subscribe .b24-form .b24-form-content.b24-form-padding-side {
+  padding: 0;
+}
+.lightning_news__subscribe .b24-form .b24-form-header-padding {
+  padding: 0;
+}
+.lightning_news__subscribe .b24-form form {
+  display: grid;
+  grid-template-columns: 280px 150px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 5px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  position: relative;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .b24-form form {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+}
+.lightning_news__subscribe .b24-form form > div:first-child {
+  grid-area: 1/1/2/2;
+}
+.lightning_news__subscribe .b24-form form > div:nth-child(2) {
+  grid-area: 2/1/3/3;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .b24-form form > div:nth-child(2) {
+    grid-area: 3/1/4/2;
+  }
+}
+.lightning_news__subscribe .b24-form form > div .b24-form-btn-block {
+  grid-area: 1/2/2/3;
+  padding: 0;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe .b24-form form > div .b24-form-btn-block {
+    grid-area: 2/1/3/2;
+  }
+}
+.lightning_news__subscribe .b24-form-btn-container {
+  margin: 0;
+}
+.lightning_news__subscribe input[type=email] {
+  min-height: 40px;
+}
+.lightning_news__subscribe button[type=submit] {
+  font: 16px/22px var(--body-font) !important;
+  max-width: 180px;
+  width: 100%;
+  border-radius: 0;
+  padding: 0;
+  height: 40px;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe button[type=submit] {
+    max-width: none;
+    font: 20px/27px var(--body-font) !important;
+    height: 45px;
+  }
+}
+
+.b24-form-btn-container {
+  margin: 0 !important;
+}
+
 /*==================== BREADCRUMBS ====================*/
 .breadcrumbs {
   margin-bottom: 60px;
@@ -3129,54 +3486,6 @@ body.active {
   .btn__close {
     right: 13px;
   }
-}
-
-.application .b24-form {
-  max-width: 600px;
-  width: 100%;
-  height: 400px;
-  background-color: #FFFFFF;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.application .b24-form-sign {
-  display: none;
-}
-.application .b24-form > div {
-  width: 100%;
-  padding: 0 134px;
-  border: none;
-}
-.application .b24-formform {
-  display: none;
-}
-.application .b24-form-wrapper {
-  border: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-.application .b24-form-content {
-  padding: 0;
-}
-.application .b24-form-btn {
-  background-color: var(--button-red-color);
-  width: 176px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  font-family: var(--body-font) !important;
-  font-size: 16px;
-}
-.application .b24-form-btn:hover {
-  background-color: transparent;
-  color: #101010;
-  border: 1px solid #101010;
 }
 
 /*==================== MODIFICATIONS-TABLE ====================*/
