@@ -101,54 +101,33 @@
             <!--==================== CARD PRODUCT ====================-->
             <section class="section card_product">
 
-                <div class="modal img-slider js-modal">
-                    <div class="overlay">
-                        <div class="img-slider-window window">
-                            <div class="swiper-container imagesSwiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <img src="./images/catalog__pages/card__product/main.png" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="section__container">
 
                     <div class="card_product__main grid">
                         <div class="card_product__images--wrapper">
                             <div class="card_product__images grid" id="images__gallery">
-                                <a  href="#" class="card_product__image-link">
-                                    <img class="card_product__img" src="./images/catalog__pages/card__product/1.png"  alt="">
+                                <a href="#" class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/1.png"
+                                        alt="">
                                 </a>
 
-                                <a  id="main-image-product" href="#"
+                                <a id="main-image-product" href="#"
                                     class="card_product__image-link--main card_product__image-link">
-                                    <img class="card_product__img" src="./images/catalog__pages/card__product/main.png" alt="">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/main.png"
+                                        alt="">
                                 </a>
 
-                                <a  href="#"
-                                    class="card_product__image-link">
-                                    <img class="card_product__img" src="./images/catalog__pages/card__product/2.png" alt="">
+                                <a href="#" class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/2.png"
+                                        alt="">
                                 </a>
-                                <a href="#"
-                                    class="card_product__image-link">
-                                    <img class="card_product__img" src="./images/catalog__pages/card__product/3.png" alt="">
+                                <a href="#" class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/3.png"
+                                        alt="">
                                 </a>
-                                <a href="#"
-                                    class="card_product__image-link">
-                                    <img class="card_product__img" src="./images/catalog__pages/card__product/4.png" alt="">
+                                <a href="#" class="card_product__image-link">
+                                    <img class="card_product__img" src="./images/catalog__pages/card__product/4.png"
+                                        alt="">
                                 </a>
                             </div>
                         </div>
@@ -177,8 +156,9 @@
                             <h1 class="card_product__title">Трековый светильник Magnetic CSMV5335MC0S</h1>
                             <div class="card_product__actions flex">
                                 <div>
-                                    <button class="card_product__action flex js-modal-btn"
-                                        data-target="modal-favorites">
+                                    <!-- <button class="card_product__action flex js-modal-btn" -->
+                                    <!-- data-target="modal-favorites" data-path="three"> -->
+                                    <button class="card_product__action flex js-modal-btn" data-path="ten">
                                         <svg class="card_product__action-icon" width="15" height="15"
                                             viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -273,7 +253,8 @@
                                 </div>
 
                                 <div>
-                                    <button class="card_product__action flex js-modal-btn" data-target="modal-compares">
+                                    <!-- <button class="card_product__action flex js-modal-btn" data-target="modal-compares" data-path="four"> -->
+                                    <button class="card_product__action flex js-modal-btn" data-path="three">
                                         <img src="./images/catalog__pages/card__product/icon-compare.svg"
                                             class="card_product__action-icon" alt="">
                                         <span class="card_product__action-title">Добавить к сравнению</span>
@@ -478,7 +459,7 @@
                             </div>
                             <div class="card_product__cart">
                                 <button class="button button--red card_product__cart-button js-modal-btn"
-                                    data-target="modal-fast-order">Купить</button>
+                                    data-target="modal-fast-order" data-path="five">Купить</button>
 
                                 <!-- <div class="js-modal modal modal--right-top" id="modal-fast-order">
                                     <div class="modal__container modal__container--white modal__container--items">
@@ -673,7 +654,7 @@
                                     </div>
                                 </div> -->
 
-                                <!-- Спасибо -->
+                                <!-- Форма благодарности -->
 
                                 <div class="modal gratitude">
                                     <div class="gratitude__content">
@@ -795,209 +776,223 @@
 
                                 <!-- Избранное -->
 
-                                <!-- <div class="modal favourites">
-                                    <div class="favourites__content">
-                                        <div class="modal__container">
-                                            <div class="wrapper">
-                                                <div class="modal__top">
-                                                    <h2 class="modal__title">
-                                                        Избранное
-                                                    </h2>
-                                                    <button class="modal__btn-close btn__close">
-                                                        
-                                                    </button>
+                                <div class="modal favourites comparison js-modal">
+                                    <div class="overlay">
+                                        <div class="favourites__content window" data-target="ten">
+                                            <div class="modal__container">
+                                                <div class="wrapper">
+                                                    <div class="modal__top">
+                                                        <h2 class="modal__title">
+                                                            Избранное
+                                                        </h2>
+                                                        <button class="modal__btn-close btn__close js-modal-close">
+                                                        </button>
+                                                    </div>
+
+                                                    <ul class="modal__list">
+
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/1.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="modal__btn-like">
+
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/2.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="modal__btn-like">
+
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/3.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="modal__btn-like">
+
+                                                                </button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+
+                                                    <button class="modal__btn-clear">Очистить</button>
+
+
                                                 </div>
+                                            </div>
+                                        </div>
 
-                                                <ul class="modal__list">
-                                                    
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                            <img class="modal__img" src="./images/popups/1.png"
-                                                                alt="product photo">
-                                                            <div class="modal__item-info product">
-                                                                <h3 class="product__title">
-                                                                    Трековый светильник Magnetic CSMV5335MC0S
-                                                                </h3>
-                                                                <div class="product__price-row">
-                                                                    <span class="product__price-discount">10 500
-                                                                        ₽</span>
-                                                                    <span class="product__price-full">100 500 ₽</span>
-                                                                </div>
-                                                                <div class="product__manufacturer-info">
-                                                                    <span class="product__manufacturer-country">
-                                                                        Италия
-                                                                    </span>
-                                                                    <span class="product__manufacturer-name">
-                                                                        Flos
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <button class="modal__btn-like">
 
-                                                            </button>
-                                                        </div>
-                                                    </li>
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                        <img class="modal__img" src="./images/popups/2.png"
-                                                            alt="product photo">
-                                                        <div class="modal__item-info product">
-                                                            <h3 class="product__title">
-                                                                Трековый светильник Magnetic CSMV5335MC0S
-                                                            </h3>
-                                                            <div class="product__price-row">
-                                                                <span class="product__price-discount">10 500 ₽</span>
-                                                                <span class="product__price-full">100 500 ₽</span>
-                                                            </div>
-                                                            <div class="product__manufacturer-info">
-                                                                <span class="product__manufacturer-country">
-                                                                    Италия
-                                                                </span>
-                                                                <span class="product__manufacturer-name">
-                                                                    Flos
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <button class="modal__btn-like">
+                                        <div class="comparison__content window" data-target="three">
+                                            <div class="modal__container">
+                                                <div class="wrapper">
+                                                    <div class="modal__top">
+                                                        <h2 class="modal__title">
+                                                            Сравнить товары
+                                                        </h2>
+                                                        <button class="modal__btn-close btn__close js-modal-close">
 
                                                         </button>
                                                     </div>
-                                                    </li>
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                            <img class="modal__img" src="./images/popups/3.png"
-                                                                alt="product photo">
-                                                            <div class="modal__item-info product">
-                                                                <h3 class="product__title">
-                                                                    Трековый светильник Magnetic CSMV5335MC0S
-                                                                </h3>
-                                                                <div class="product__price-row">
-                                                                    <span class="product__price-discount">10 500
-                                                                        ₽</span>
-                                                                    <span class="product__price-full">100 500 ₽</span>
+
+                                                    <ul class="modal__list">
+
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/3.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
-                                                                <div class="product__manufacturer-info">
-                                                                    <span class="product__manufacturer-country">
-                                                                        Италия
-                                                                    </span>
-                                                                    <span class="product__manufacturer-name">
-                                                                        Flos
-                                                                    </span>
-                                                                </div>
+                                                                <button class="btn__close"></button>
                                                             </div>
-                                                            <button class="modal__btn-like">
-
-                                                            </button>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-
-                                                <button class="modal__btn-clear">Очистить</button>
-
-                                
+                                                        </li>
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/3.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn__close"></button>
+                                                            </div>
+                                                        </li>
+                                                        <li class="modal__item">
+                                                            <div class="modal__item-box">
+                                                                <img class="modal__img" src="./images/popups/3.png"
+                                                                    alt="product photo">
+                                                                <div class="modal__item-info product">
+                                                                    <h3 class="product__title">
+                                                                        Трековый светильник Magnetic CSMV5335MC0S
+                                                                    </h3>
+                                                                    <div class="product__price-row">
+                                                                        <span class="product__price-discount">10 500
+                                                                            ₽</span>
+                                                                        <span class="product__price-full">100 500
+                                                                            ₽</span>
+                                                                    </div>
+                                                                    <div class="product__manufacturer-info">
+                                                                        <span class="product__manufacturer-country">
+                                                                            Италия
+                                                                        </span>
+                                                                        <span class="product__manufacturer-name">
+                                                                            Flos
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <button class="btn__close"></button>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="comparison__btns">
+                                                        <button class="modal__btn-compare">Перейти к сравнению</button>
+                                                        <button class="modal__btn-clear">Очистить</button>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div> -->
+                                </div>
 
                                 <!-- Сравнение -->
 
-                                <!-- <div class="modal comparison">
-                                    <div class="comparison__content">
-                                        <div class="modal__container">
-                                            <div class="wrapper">
-                                                <div class="modal__top">
-                                                    <h2 class="modal__title">
-                                                        Сравнить товары
-                                                    </h2>
-                                                    <button class="modal__btn-close btn__close">
-                                                        
-                                                    </button>
-                                                </div>
-
-                                                <ul class="modal__list">
-                                                    
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                            <img class="modal__img" src="./images/popups/3.png"
-                                                                alt="product photo">
-                                                            <div class="modal__item-info product">
-                                                                <h3 class="product__title">
-                                                                    Трековый светильник Magnetic CSMV5335MC0S
-                                                                </h3>
-                                                                <div class="product__price-row">
-                                                                    <span class="product__price-discount">10 500
-                                                                        ₽</span>
-                                                                    <span class="product__price-full">100 500 ₽</span>
-                                                                </div>
-                                                                <div class="product__manufacturer-info">
-                                                                    <span class="product__manufacturer-country">
-                                                                        Италия
-                                                                    </span>
-                                                                    <span class="product__manufacturer-name">
-                                                                        Flos
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <button class="btn__close"></button>
-                                                        </div>
-                                                    </li>
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                        <img class="modal__img" src="./images/popups/3.png"
-                                                            alt="product photo">
-                                                        <div class="modal__item-info product">
-                                                            <h3 class="product__title">
-                                                                Трековый светильник Magnetic CSMV5335MC0S
-                                                            </h3>
-                                                            <div class="product__price-row">
-                                                                <span class="product__price-discount">10 500 ₽</span>
-                                                                <span class="product__price-full">100 500 ₽</span>
-                                                            </div>
-                                                            <div class="product__manufacturer-info">
-                                                                <span class="product__manufacturer-country">
-                                                                    Италия
-                                                                </span>
-                                                                <span class="product__manufacturer-name">
-                                                                    Flos
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <button class="btn__close"></button>
-                                                    </div>
-                                                    </li>
-                                                    <li class="modal__item">
-                                                        <div class="modal__item-box">
-                                                            <img class="modal__img" src="./images/popups/3.png"
-                                                                alt="product photo">
-                                                            <div class="modal__item-info product">
-                                                                <h3 class="product__title">
-                                                                    Трековый светильник Magnetic CSMV5335MC0S
-                                                                </h3>
-                                                                <div class="product__price-row">
-                                                                    <span class="product__price-discount">10 500
-                                                                        ₽</span>
-                                                                    <span class="product__price-full">100 500 ₽</span>
-                                                                </div>
-                                                                <div class="product__manufacturer-info">
-                                                                    <span class="product__manufacturer-country">
-                                                                        Италия
-                                                                    </span>
-                                                                    <span class="product__manufacturer-name">
-                                                                        Flos
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                            <button class="btn__close"></button>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                                <div class="comparison__btns">
-                                                    <button class="modal__btn-compare">Перейти к сравнению</button>
-                                                    <button class="modal__btn-clear">Очистить</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <!-- <div class="modal comparison js-modal" >
+                                    <div class="overlay">
+                                        
                                     </div>
                                 </div> -->
 

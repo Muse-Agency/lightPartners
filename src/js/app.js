@@ -97,29 +97,47 @@ imgSections.forEach(el => {
 
 
 /*==================== MODALS ====================*/
-const modalViews = document.querySelector('.js-modal'),
+const modalViews = document.querySelectorAll('.js-modal'),
     modalBtns = document.querySelectorAll('.js-modal-btn'),
     modalCloses = document.querySelectorAll('.js-modal-close'),
-    modalOverlay = document.querySelector('.overlay');
+    modalOverlay = document.querySelectorAll('.overlay'),
+    windows = document.querySelectorAll('.window');
 
 modalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
         let path = e.currentTarget.getAttribute('data-path');
-        modalViews.classList.add('active-modal');
+        
+        modalViews.forEach((modalWindows) =>{
+            modalWindows.classList.add('active-modal');
+        })
         document.querySelector(`[data-target='${path}']`).classList.add('active-window');
 
     })
 })
 
-modalOverlay.addEventListener('click', (e) => {
-    if (e.target == modalOverlay) {
-        modalViews.classList.remove('active-modal');
-    }
+modalOverlay.forEach((overlay) =>{
+    overlay.addEventListener('click', (e) => {
+        if (e.target == overlay) {
+            modalViews.forEach((modalWindows) =>{
+                modalWindows.classList.remove('active-modal');
+            })
+            windows.forEach((window)=>{
+                window.classList.remove('active-window')
+            })
+        }
+    })
 })
+
+
 
 modalCloses.forEach((closeBtn) => {
     closeBtn.addEventListener('click', () => {
-        modalViews.classList.remove('active-modal');
+        modalViews.forEach((modalWindows) =>{
+            modalWindows.classList.remove('active-modal');
+        })
+        windows.forEach((window)=>{
+            window.classList.remove('active-window')
+        })
     })
 })
 

@@ -37,8 +37,8 @@
 
 .window{
     position: relative;
-    display: flex;
-    visibility: hidden;
+    // display: flex;
+    display: none!important;
     opacity: 0;
     transition: all .5s ease;
     z-index: 10;
@@ -47,6 +47,7 @@
 .active-window{
     visibility: visible;
     opacity: 1;
+    display: flex!important;
 }
 
 .overlay{
@@ -340,6 +341,11 @@
     
     align-items: flex-start;
     justify-content: flex-end;
+
+    .overlay{
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
     &__content{
         margin-top: 120px;
         background: #FFFFFF;
@@ -351,6 +357,9 @@
             margin-top: 72px;
             padding: 20px 0;
         }
+    }
+    .window{
+        display: block;
     }
 
 }

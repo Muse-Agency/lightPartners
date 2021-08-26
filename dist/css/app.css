@@ -2401,10 +2401,7 @@ body.active {
 
 .window {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  visibility: hidden;
+  display: none !important;
   opacity: 0;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -2414,6 +2411,9 @@ body.active {
 .active-window {
   visibility: visible;
   opacity: 1;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .overlay {
@@ -2753,6 +2753,14 @@ body.active {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.favourites .overlay, .comparison .overlay, .fast-order .overlay {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
 .favourites__content, .comparison__content, .fast-order__content {
   margin-top: 120px;
   background: #FFFFFF;
@@ -2765,6 +2773,9 @@ body.active {
     margin-top: 72px;
     padding: 20px 0;
   }
+}
+.favourites .window, .comparison .window, .fast-order .window {
+  display: block;
 }
 
 .comparison .modal__item .btn__close, .fast-order .modal__item .btn__close {
