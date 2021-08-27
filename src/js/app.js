@@ -145,10 +145,7 @@ modalOverlay.forEach((overlay) =>{
     window.onload = () =>{
         const bitrixButtons = document.querySelectorAll('.b24-form-btn');
         const heightClass = document.querySelectorAll('.b24-from-state-on');
-        const gratitudeCloseButton = document.querySelector('#gratitude__close-btn');
-        console.log(bitrixButtons);
-        console.log(modalViews);
-    
+        const gratitudeCloseButton = document.querySelector('#gratitude__close-btn');    
         
         const succesWindow = document.querySelectorAll('.b24-form-state-container');
         succesWindow.forEach((succesWindows)=>{
@@ -180,14 +177,7 @@ modalOverlay.forEach((overlay) =>{
 
         
     }
-
-
-
-
-
 })
-
-
 
 modalCloses.forEach((closeBtn) => {
     closeBtn.addEventListener('click', () => {
@@ -298,26 +288,24 @@ if (matchingContent) {
 }
 
 
-// Card product slider
+// Projects All Tabs
 
-// const swiperImages = new Swiper(".imagesSwiper", {
-//     slidesPerView: 1,
-//     spaceBetween: 50,
-// });
-
-// const mainImg = document.querySelector('#main-image-product');
-// const imagesSwiper = document.querySelector('.img-slider-window');
-
-// mainImg.addEventListener('click', ()=>{
-//     modalViews.classList.add('active-modal');
-//     imagesSwiper.classList.add('active-window');
-// })
+const allProjectsFilterButtons = document.querySelectorAll('.projects__filter-btn');
+const allProjectsFilterItems = document.querySelectorAll('.projects__filter-item');
 
 
+allProjectsFilterButtons.forEach((filterButtons) =>{
+    filterButtons.addEventListener('click',(e) =>{
+        let filterData = e.target.dataset['filter'];
 
-//Thank you Modal
+        allProjectsFilterItems.forEach((filterItem)=>{
+            filterItem.classList.remove('hide__tabs-item');
+            if(!filterItem.classList.contains(filterData)){
+                filterItem.classList.add('hide__tabs-item');
+            }
 
-
-
-
+            
+        })
+    })
+})
 
