@@ -928,6 +928,106 @@ input[type=checkbox] {
   display: none;
 }
 
+@media screen and (max-width: 768px) {
+  button[type=submit] {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+.b24-form-header-padding {
+  display: none;
+}
+
+.b24-form-wrapper {
+  margin: 0 !important;
+}
+
+.b24-form-content.b24-form-padding-side {
+  padding: 0;
+}
+
+.b24-form-sign {
+  display: none;
+}
+
+.b24-form-btn-block {
+  padding: 0 !important;
+}
+
+.b24-form-field-layout-section {
+  margin: 0 !important;
+  margin-bottom: 10px !important;
+  color: var(--semi-dark-grey-color) !important;
+}
+
+.b24-form-btn {
+  background: #BD1626 !important;
+  border-radius: 0 !important;
+  max-width: 180px;
+  width: 100%;
+  font: 16px/22px var(--body-font) !important;
+}
+@media screen and (max-width: 768px) {
+  .b24-form-btn {
+    font: 20px/27px var(--body-font) !important;
+  }
+}
+
+.b24-form-wrapper.b24-form-border-bottom {
+  border-bottom: 0 !important;
+}
+
+.b24-form input {
+  padding: 0 !important;
+  padding-left: 10px !important;
+  border-radius: 0 !important;
+}
+.b24-form .b24-form-control-label {
+  display: none;
+}
+
+.fast-order__form form {
+  display: grid;
+}
+.fast-order__form form > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 25px;
+     -moz-column-gap: 25px;
+          column-gap: 25px;
+  row-gap: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 720px) {
+  .fast-order__form form > div {
+    grid-template-columns: 1fr;
+  }
+}
+.fast-order__form form > div .b24-form-field.b24-form-field-text.b24-form-control-text {
+  grid-area: 2/1/3/3;
+}
+@media screen and (max-width: 720px) {
+  .fast-order__form form > div .b24-form-field.b24-form-field-text.b24-form-control-text {
+    grid-area: 3/1/4/2;
+  }
+}
+.fast-order__form form .b24-form-field {
+  margin-bottom: 0;
+}
+.fast-order__form form .b24-form-control-container {
+  margin-bottom: 0;
+}
+.fast-order__form .b24-form-btn {
+  font: 20px/27px var(--body-font) !important;
+}
+@media screen and (max-width: 768px) {
+  .fast-order__form .b24-form-btn {
+    font: 18px/25px var(--body-font) !important;
+    font-weight: 400;
+  }
+}
+
 .overlay .b24-form,
 .bitrix__form .b24-form {
   max-width: 600px;
@@ -976,16 +1076,12 @@ input[type=checkbox] {
 .overlay .b24-form-field-layout-section,
 .bitrix__form .b24-form-field-layout-section {
   margin: 0;
+  margin-bottom: 10px;
+  font: 14px/16px var(--header-font);
 }
 .overlay .b24-form-control-label,
 .bitrix__form .b24-form-control-label {
   display: none;
-}
-.overlay .b24-form-field-layout-section,
-.bitrix__form .b24-form-field-layout-section {
-  color: var(--semi-dark-grey-color);
-  margin-bottom: 10px;
-  font: 14px/16px var(--header-font);
 }
 .overlay .b24-form input[name=name],
 .overlay .b24-form input[name=phone],
@@ -1010,10 +1106,6 @@ input[type=checkbox] {
 .bitrix__form .b24-form input[name=phone] {
     margin-bottom: 15px;
   }
-}
-.overlay .b24-form input[type=checkbox],
-.bitrix__form .b24-form input[type=checkbox] {
-  display: none;
 }
 .overlay .b24-form-control-container,
 .bitrix__form .b24-form-control-container {
@@ -1085,6 +1177,24 @@ input[type=checkbox] {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+.news__form .subscribe__form-title {
+  font-size: 38px;
+  line-height: 38px;
+  max-width: 292px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .news__form .subscribe__form-title {
+    font-size: 25px;
+    line-height: 28px;
+    max-width: none;
+  }
+}
+.news__form .subscribe__form-subtitle {
+  font-size: 16px;
+  line-height: 18px;
+  color: #6D6D6D;
+}
 .news__form .subscribe__form-header {
   width: 100%;
 }
@@ -1095,6 +1205,24 @@ input[type=checkbox] {
 }
 .news__form .b24-form-content.b24-form-padding-side {
   padding: 0;
+}
+.news__form .b24-form-control-label {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .news__form .b24-form-control-label {
+    display: none;
+  }
+}
+.news__form .b24-form-field-layout-section {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .news__form .b24-form-field-layout-section {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+  }
 }
 .news__form button[type=submit] {
   font: 22px/30px var(--body-font) !important;
@@ -1252,6 +1380,12 @@ input[type=checkbox] {
 }
 .lightning_news__subscribe input[type=email] {
   min-height: 40px;
+  height: 40px !important;
+}
+@media screen and (max-width: 880px) {
+  .lightning_news__subscribe input[type=email] {
+    height: 45px !important;
+  }
 }
 .lightning_news__subscribe button[type=submit] {
   font: 16px/22px var(--body-font) !important;
@@ -1271,6 +1405,63 @@ input[type=checkbox] {
 
 .b24-form-btn-container {
   margin: 0 !important;
+}
+
+.consultaion__bitrix-form .b24-form-header.b24-form-padding-side {
+  display: none;
+}
+.consultaion__bitrix-form .b24-form-field-layout-section {
+  font: 16px/22px var(--body-font) !important;
+}
+@media screen and (max-width: 768px) {
+  .consultaion__bitrix-form .b24-form-field-layout-section {
+    font: 20px/27px var(--body-font) !important;
+  }
+}
+
+.bitrix-24 .consultation__description-box, .news__form .consultation__description-box {
+  margin-bottom: 30px;
+}
+.bitrix-24 .b24-form-control-desc, .news__form .b24-form-control-desc {
+  font: 12px/15px var(--header-font) !important;
+  color: #6D6D6D;
+  opacity: 1 !important;
+}
+.bitrix-24 .b24-form-field-agreement-link, .news__form .b24-form-field-agreement-link {
+  font: 12px/15px var(--header-font) !important;
+  color: #6D6D6D;
+  margin-bottom: 30px;
+  opacity: 1 !important;
+}
+
+.main__news .b24-form-control-label {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .main__news .b24-form-control-label {
+    display: none;
+  }
+}
+.main__news .b24-form-field-layout-section {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main__news .b24-form-field-layout-section {
+    display: block;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.main__news .b24-form-field.b24-form-field-layout.b24-form-control-layout {
+  margin: 0;
+}
+.main__news .b24-form-field.b24-form-field-layout.b24-form-control-layout input {
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .main__news .b24-form-field.b24-form-field-layout.b24-form-control-layout input {
+    height: 45px;
+  }
 }
 
 /*==================== BREADCRUMBS ====================*/

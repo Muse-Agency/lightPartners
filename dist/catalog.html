@@ -981,7 +981,7 @@
                     <button class="modal__btn-clear">Очистить</button>
                 </div>
 
-                <div class="form__wrapper form">
+                <div class="form__wrapper form fast-order__form">
                     <h2 class="form__title">
                         Быстрый заказ
                     </h2>
@@ -994,6 +994,9 @@
                             var h = d.getElementsByTagName('script')[0];
                             h.parentNode.insertBefore(s, h);
                         })(window, document, 'https://cdn-ru.bitrix24.ru/b12684458/crm/form/loader_8.js');
+
+                        const btnSend = document.querySelectorAll('.b24-form-btn')
+                        console.log(btnSend)
                     </script>
 
                     <!-- <form action="#" class="form">
