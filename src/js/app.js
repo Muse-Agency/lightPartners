@@ -101,7 +101,12 @@ const modalViews = document.querySelectorAll('.js-modal'),
     modalBtns = document.querySelectorAll('.js-modal-btn'),
     modalCloses = document.querySelectorAll('.js-modal-close'),
     modalOverlay = document.querySelectorAll('.overlay'),
-    windows = document.querySelectorAll('.window');
+    windows = document.querySelectorAll('.window'),
+    thankYouModal = document.querySelector('.gratitude__content'),
+    applicationForm=  document.querySelectorAll('.inner-form');
+
+    
+    
 
 modalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
@@ -115,17 +120,71 @@ modalBtns.forEach((el) => {
     })
 })
 
+
+
 modalOverlay.forEach((overlay) =>{
     overlay.addEventListener('click', (e) => {
         if (e.target == overlay) {
             modalViews.forEach((modalWindows) =>{
                 modalWindows.classList.remove('active-modal');
+                thankYouModal.classList.remove('gratitude__modal-active');
             })
             windows.forEach((window)=>{
                 window.classList.remove('active-window')
             })
+
+            applicationForm.forEach((windowApplication)=>{
+                windowApplication.style.display = 'block';
+            })
         }
     })
+
+    // ;
+
+
+    window.onload = () =>{
+        const bitrixButtons = document.querySelectorAll('.b24-form-btn');
+        const heightClass = document.querySelectorAll('.b24-from-state-on');
+        const gratitudeCloseButton = document.querySelector('#gratitude__close-btn');
+        console.log(bitrixButtons);
+        console.log(modalViews);
+    
+        
+        const succesWindow = document.querySelectorAll('.b24-form-state-container');
+        succesWindow.forEach((succesWindows)=>{
+            succesWindows.remove();
+        })
+    
+        applicationForm.forEach((windowApplication) =>{
+            
+            bitrixButtons.forEach((sendButton) =>{
+                sendButton.addEventListener('click', () =>{
+                    modalViews.forEach((modalWindows)=>{
+                        modalWindows.classList.add('active-modal');
+                    })
+                    windowApplication.style.display = 'none';
+                    thankYouModal.classList.add('gratitude__modal-active');
+    
+                    gratitudeCloseButton.addEventListener('click', () =>{
+                        thankYouModal.classList.remove('gratitude__modal-active');
+                        modalViews.forEach((modalWindows)=>{
+                            modalWindows.classList.remove('active-modal');
+                        })
+
+                        windowApplication.style.display = 'block';
+
+                    })
+                })
+            })
+        }) 
+
+        
+    }
+
+
+
+
+
 })
 
 
@@ -257,4 +316,8 @@ if (matchingContent) {
 
 
 //Thank you Modal
+
+
+
+
 

@@ -3180,6 +3180,7 @@ body.active {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  display: none;
 }
 @media screen and (max-width: 580px) {
   .gratitude__content {
@@ -3677,6 +3678,16 @@ body.active {
   .btn__close {
     right: 13px;
   }
+}
+
+.gratitude__modal-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.b24-form-wrapper.b24-from-state-on {
+  min-height: 0 !important;
 }
 
 /*==================== MODIFICATIONS-TABLE ====================*/
