@@ -429,14 +429,19 @@
 }
 
 .header__slider-content.swiper-slide{
-    background-image: url('../images/header__slide_2.png');
     background-size: cover;
-    @media screen and (max-width: 480px) {
-        background-image: url(../images/main_page/background_header_mobile.jpeg);
-        // background-size: contain;
+    position: relative;
+    .header__img-swiper{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        top: 0;
     }
-
 }
+
+
 
 .header.header--home.header-pt{
     overflow-x: hidden;

@@ -4,7 +4,7 @@
 
     .btn__close {
         position: absolute;
-        z-index: 9999999;
+        z-index: 14000;
     }
 }
 
@@ -12,10 +12,10 @@ input[type=checkbox] {
     display: none;
 }
 button[type=submit]{
-    @media screen and (max-width: 768px) {
-        width: 100%!important;
-        max-width: none!important;
-    }
+    // @media screen and (max-width: 768px) {
+    //     width: 100%!important;
+    //     max-width: none!important;
+    // }
 }
 
 .b24-form-header-padding{
@@ -131,7 +131,7 @@ button[type=submit]{
 
 
             @media screen and (max-width: 600px) {
-                padding: 0 10px;
+                padding: 35px 24px 48px 20px;
             }
         }
 
@@ -181,8 +181,10 @@ button[type=submit]{
             padding: 0 20px;
             background: #EAEAEA;
             border-radius: 0;
-            min-height: 42px;
+            height: 40px!important;
             font: 14px/16px var(--header-font);
+            border: none;
+            box-shadow: none;
         }
 
         input[name=name] {
@@ -579,4 +581,8 @@ button[type=submit]{
             }
         }
     }
+}
+
+.b24-form-state {
+    display: none;
 }
