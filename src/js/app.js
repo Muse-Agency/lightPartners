@@ -116,8 +116,8 @@ const modalViews = document.querySelectorAll('.js-modal'),
 modalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
         let path = e.currentTarget.getAttribute('data-path');
-        
-        modalViews.forEach((modalWindows) =>{
+
+        modalViews.forEach((modalWindows) => {
             modalWindows.classList.add('active-modal');
         })
         document.querySelector(`[data-target='${path}']`).classList.add('active-window');
@@ -127,18 +127,18 @@ modalBtns.forEach((el) => {
 
 
 
-modalOverlay.forEach((overlay) =>{
+modalOverlay.forEach((overlay) => {
     overlay.addEventListener('click', (e) => {
         if (e.target == overlay) {
-            modalViews.forEach((modalWindows) =>{
+            modalViews.forEach((modalWindows) => {
                 modalWindows.classList.remove('active-modal');
                 // thankYouModal.classList.remove('gratitude__modal-active');
             })
-            windows.forEach((window)=>{
+            windows.forEach((window) => {
                 window.classList.remove('active-window')
             })
 
-            applicationForm.forEach((windowApplication)=>{
+            applicationForm.forEach((windowApplication) => {
                 windowApplication.style.display = 'block';
             })
         }
@@ -220,10 +220,10 @@ loader.forEach((loader)=>{
 
 modalCloses.forEach((closeBtn) => {
     closeBtn.addEventListener('click', () => {
-        modalViews.forEach((modalWindows) =>{
+        modalViews.forEach((modalWindows) => {
             modalWindows.classList.remove('active-modal');
         })
-        windows.forEach((window)=>{
+        windows.forEach((window) => {
             window.classList.remove('active-window')
         })
     })
@@ -333,17 +333,17 @@ const allProjectsFilterButtons = document.querySelectorAll('.projects__filter-bt
 const allProjectsFilterItems = document.querySelectorAll('.projects__filter-item');
 
 
-allProjectsFilterButtons.forEach((filterButtons) =>{
-    filterButtons.addEventListener('click',(e) =>{
+allProjectsFilterButtons.forEach((filterButtons) => {
+    filterButtons.addEventListener('click', (e) => {
         let filterData = e.target.dataset['filter'];
 
-        allProjectsFilterItems.forEach((filterItem)=>{
+        allProjectsFilterItems.forEach((filterItem) => {
             filterItem.classList.remove('hide__tabs-item');
-            if(!filterItem.classList.contains(filterData)){
+            if (!filterItem.classList.contains(filterData)) {
                 filterItem.classList.add('hide__tabs-item');
             }
 
-            
+
         })
     })
 })

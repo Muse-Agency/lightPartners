@@ -12,13 +12,13 @@ window.addEventListener("scroll", () => {
     }
 })
 
-const controlMobileMenu = () =>{
+const controlMobileMenu = () => {
     const btnOpen = document.getElementById('btn_open');
     const btnClose = document.getElementById('btn_close');
     const mobileMenu = document.getElementById('burger-menu');
     const bodyTag = document.getElementById('bodyTag')
 
-    btnOpen.addEventListener('click', function(){
+    btnOpen.addEventListener('click', function () {
         mobileMenu.classList.toggle('active');
         bodyTag.classList.toggle('body-active');
     })
