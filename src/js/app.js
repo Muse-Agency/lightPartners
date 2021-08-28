@@ -103,16 +103,16 @@ const modalViews = document.querySelectorAll('.js-modal'),
     modalOverlay = document.querySelectorAll('.overlay'),
     windows = document.querySelectorAll('.window'),
     thankYouModal = document.querySelector('.gratitude__content'),
-    applicationForm=  document.querySelectorAll('.inner-form');
+    applicationForm = document.querySelectorAll('.inner-form');
 
-    
-    
+
+
 
 modalBtns.forEach((el) => {
     el.addEventListener('click', (e) => {
         let path = e.currentTarget.getAttribute('data-path');
-        
-        modalViews.forEach((modalWindows) =>{
+
+        modalViews.forEach((modalWindows) => {
             modalWindows.classList.add('active-modal');
         })
         document.querySelector(`[data-target='${path}']`).classList.add('active-window');
@@ -122,18 +122,18 @@ modalBtns.forEach((el) => {
 
 
 
-modalOverlay.forEach((overlay) =>{
+modalOverlay.forEach((overlay) => {
     overlay.addEventListener('click', (e) => {
         if (e.target == overlay) {
-            modalViews.forEach((modalWindows) =>{
+            modalViews.forEach((modalWindows) => {
                 modalWindows.classList.remove('active-modal');
                 thankYouModal.classList.remove('gratitude__modal-active');
             })
-            windows.forEach((window)=>{
+            windows.forEach((window) => {
                 window.classList.remove('active-window')
             })
 
-            applicationForm.forEach((windowApplication)=>{
+            applicationForm.forEach((windowApplication) => {
                 windowApplication.style.display = 'block';
             })
         }
@@ -142,29 +142,29 @@ modalOverlay.forEach((overlay) =>{
     // ;
 
 
-    window.onload = () =>{
+    window.onload = () => {
         const bitrixButtons = document.querySelectorAll('.b24-form-btn');
         const heightClass = document.querySelectorAll('.b24-from-state-on');
-        const gratitudeCloseButton = document.querySelector('#gratitude__close-btn');    
-        
+        const gratitudeCloseButton = document.querySelector('#gratitude__close-btn');
+
         const succesWindow = document.querySelectorAll('.b24-form-state-container');
-        succesWindow.forEach((succesWindows)=>{
+        succesWindow.forEach((succesWindows) => {
             succesWindows.remove();
         })
-    
-        applicationForm.forEach((windowApplication) =>{
-            
-            bitrixButtons.forEach((sendButton) =>{
-                sendButton.addEventListener('click', () =>{
-                    modalViews.forEach((modalWindows)=>{
+
+        applicationForm.forEach((windowApplication) => {
+
+            bitrixButtons.forEach((sendButton) => {
+                sendButton.addEventListener('click', () => {
+                    modalViews.forEach((modalWindows) => {
                         modalWindows.classList.add('active-modal');
                     })
                     windowApplication.style.display = 'none';
                     thankYouModal.classList.add('gratitude__modal-active');
-    
-                    gratitudeCloseButton.addEventListener('click', () =>{
+
+                    gratitudeCloseButton.addEventListener('click', () => {
                         thankYouModal.classList.remove('gratitude__modal-active');
-                        modalViews.forEach((modalWindows)=>{
+                        modalViews.forEach((modalWindows) => {
                             modalWindows.classList.remove('active-modal');
                         })
 
@@ -173,18 +173,18 @@ modalOverlay.forEach((overlay) =>{
                     })
                 })
             })
-        }) 
+        })
 
-        
+
     }
 })
 
 modalCloses.forEach((closeBtn) => {
     closeBtn.addEventListener('click', () => {
-        modalViews.forEach((modalWindows) =>{
+        modalViews.forEach((modalWindows) => {
             modalWindows.classList.remove('active-modal');
         })
-        windows.forEach((window)=>{
+        windows.forEach((window) => {
             window.classList.remove('active-window')
         })
     })
@@ -294,17 +294,17 @@ const allProjectsFilterButtons = document.querySelectorAll('.projects__filter-bt
 const allProjectsFilterItems = document.querySelectorAll('.projects__filter-item');
 
 
-allProjectsFilterButtons.forEach((filterButtons) =>{
-    filterButtons.addEventListener('click',(e) =>{
+allProjectsFilterButtons.forEach((filterButtons) => {
+    filterButtons.addEventListener('click', (e) => {
         let filterData = e.target.dataset['filter'];
 
-        allProjectsFilterItems.forEach((filterItem)=>{
+        allProjectsFilterItems.forEach((filterItem) => {
             filterItem.classList.remove('hide__tabs-item');
-            if(!filterItem.classList.contains(filterData)){
+            if (!filterItem.classList.contains(filterData)) {
                 filterItem.classList.add('hide__tabs-item');
             }
 
-            
+
         })
     })
 })
