@@ -7,11 +7,6 @@
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: auto;
     }
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-        
-    }
-
 }
 .product__content {
     position: relative;
@@ -32,6 +27,12 @@
             transform: scale(1.2);
         }
     }
+    .product__img {
+        @media screen and (max-width: 600px) {
+            width: 100%;
+            height: 120px;
+        }
+    }
 }
 .product__title,
 .product__img {
@@ -42,6 +43,9 @@
     font-weight: var(--font-medium);
     font-size: var(--text-style-20-font-size);
     margin-bottom: 35px;
+    @media screen and (max-width: 600px) {
+        font-size: 17px;
+    }
 }
 .product__img {
     width: 250px;

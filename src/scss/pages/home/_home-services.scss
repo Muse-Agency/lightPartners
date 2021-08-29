@@ -116,6 +116,10 @@
                 font-size: 22.71px;
                 line-height: 27.68px;
             }
+            @media screen and (max-width: 600px) {
+                font-size: 17.71px;
+                line-height: 20.68px;
+            }
         }
 
         .service__subtitle {
