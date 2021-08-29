@@ -35,6 +35,30 @@
 .filters__section {
     justify-content: space-between;
 }
+.filters__radio{
+    flex-wrap: wrap;
+    row-gap: 10px;
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+}
+
+.filters__attr{
+    flex-wrap: wrap;
+    @media screen and (max-width: 600px) {
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        // align-items: flex-start;
+    }
+}
+.filters__sorts{
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
 .filter__attr-item,
 .sorts {
     position: relative;
@@ -59,6 +83,9 @@
 
 .filter__attr-title {
     font-size: var(--text-style-18-font-size);
+    @media screen and (max-width: 768px) {
+        font-size: var(--text-style-16-font-size);
+    }
 }
 
 .filter__attr-arrow > span,

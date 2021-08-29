@@ -58,7 +58,7 @@
     }
     .form__agreement{
         line-height: 13.37px;
-    font-size: 12px;
+        font-size: 12px;
         @media screen and (max-width: 768px) {
             max-width: 256px;
             width: 100%;
@@ -111,6 +111,18 @@
 
 .contacts__info-content {
     font-size: var(--text-style-18-font-size);
+
+
+    .social__item {
+        &:hover {
+            transition: all .2s ease;
+
+            .contacts__social-icon {
+                transition: all .2s ease;
+                fill: #636363;
+            }
+        }
+    }
 }
 
 .contacts__info-content-title {

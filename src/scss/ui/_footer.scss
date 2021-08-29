@@ -7,52 +7,137 @@
         justify-content: space-between;
     }
 }
+.container{
+    @media screen and (max-width: 1240px) {
+        padding: 0 10px;
+        margin: 0;
+    }
+}
 .footer,
 .footer a {
     color: var(--white-color);
-    font-size: 16px;
+    font-size: 16px!important;
     line-height: 20px;
 }
 
+.footer__wrapper-grid{
+    display: grid;
+    grid-template-columns: 230px 250px 1fr;
+    grid-auto-rows: auto;
+    row-gap: 25px;
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: 206px 282px 1fr;
+        row-gap: 0;
+    }
+    @media screen and (max-width: 955px) {
+        grid-template-columns: 244px 1fr;
+        row-gap: 30px;
+    }
+    @media screen and (max-width: 640px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
 .footer__logo {
     width: 100px;
-    height: 100px;
+    // height: 100px;
     margin-top: 3px;
+}
+
+.footer__logo-img{
+    width: 100px;
+    height: 100px;
+    @media screen and (max-width: 1000px) {
+        width: 135px;
+        height: 135px;
+    }
+    @media screen and (max-width: 640px) {
+        height: 60px;
+        width: 60px;
+    }
 }
 
 .footer__content {
     flex-wrap: wrap;
 }
 
+.footer__logo-link{
+    @media screen and (max-width: 1000px) {
+        grid-area: 1/1/4/2;
+    }
+    @media screen and (max-width: 640px) {
+        grid-area: 1/1/2/2;
+    }
+    
+}
+
 .footer__links {
-    margin-left: 100px;
+    // margin-left: 100px;
     width: 100%;
-    max-width: 300px;
-    margin-right: auto;
-    max-height: 100px;
+    // max-width: 300px;
+    // margin-right: auto;
+    // max-height: 100px;
+    @media screen and (max-width: 640px) {
+        grid-area: 2/1/3/2;
+    }
     &-social {
         width: 100%;
-        margin-top: -70px;
+        grid-area: 2/1/3/3;
+        @media screen and (max-width: 1000px) {
+            grid-area: 2/2/3/3;
+        }
+        @media screen and (max-width: 640px) {
+            grid-area: 4/1/5/2;
+        }
+
+        
     }
+    
 }
 .footer__nav {
-    flex-wrap: wrap;
-    &-item {
-        margin-bottom: 20px;
-        height: 20px;
-        width: 86px;
-        &:nth-child(1),
-        &:nth-child(3),
-        &:nth-child(5) {
-            margin-right: 75px;
-        }
+    // flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 75px;
+    row-gap: 20px;
+    height: 100px;
+
+    @media screen and (max-width: 1000px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 11px);
+        column-gap: 22px;
+        row-gap: 14px;
+        height: 100%;
     }
+    @media screen and (max-width: 640px) {
+        column-gap: 20px;
+        row-gap: 24px;
+    }
+    // &-item {
+    //     // margin-bottom: 20px;
+    //     // height: 20px;
+    //     // width: 86px;
+    //     // &:nth-child(1),
+    //     // &:nth-child(3),
+    //     // &:nth-child(5) {
+    //     //     margin-right: 75px;
+    //     // }
+    // }
 }
 .footer__nav-link {
     font-family: var(--header-font);
     font-size: 20px;
     font-weight: var(--font-medium);
-    width: 45%;
+    // width: 45%;
+    @media screen and (max-width: 1000px) {
+        font-size: var(--text-style-16-font-size);
+        font-weight: 600;
+    }
+    @media screen and (max-width: 640px) {
+        font-weight: 400;
+    }
 }
 
 .footer__title {
@@ -68,6 +153,12 @@
     row-gap: 5px;
     width: 335px;
     margin-top: 15px;
+    @media screen and (max-width: 640px) {
+        column-gap: 24px;
+        justify-content: flex-start!important;
+        width: 100%;
+    }
+
 }
 
 .footer__contact_value {
@@ -80,11 +171,117 @@
 .footer__contacts {
     flex-direction: column;
     justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+        grid-area: 1/3/4/4;
+    }
+    @media screen and (max-width: 955px) {
+        grid-area: 3/1/4/3;
+        flex-direction: row;
+    }
+    @media screen and (max-width: 640px) {
+        grid-area: 3/1/4/2;
+        flex-direction: column;
+    }
 }
 
 .footer__politics {
+    grid-area: 2/3/3/4;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 109px;
     margin-top: 50px;
+    @media screen and (max-width: 1000px) {
+        grid-area: 3/2/4/3;
+        margin-top: 0;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+    @media screen and (max-width: 955px) {
+        grid-area: 4/1/5/3;
+    }
+    @media screen and (max-width: 640px) {
+        grid-area: 5/1/6/2;
+    }
 }
 .footer__politics-link {
     font-family: var(--header-font);
+}
+
+.footer__contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 109px;
+    &:not(:last-child){
+        @media screen and (max-width: 955px) {
+            margin-right: 8px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        padding-right: 70px;
+        
+    }
+    @media screen and (max-width: 955px) {
+        padding-right: 0;
+        align-items: flex-start;
+    }
+}
+.footer__title{
+    padding-right: 204px;
+    @media screen and (max-width: 1000px) {
+        font-size: 12px;
+        padding-right: 211px;
+    }
+    @media screen and (max-width: 955px) {
+        padding-right: 0;
+    }
+}
+.title--email,.title--adress{
+    padding-right: 221px;
+    
+}
+
+.title--email{
+    @media screen and (max-width: 1000px) {
+        padding-right: 230px;
+    }
+    @media screen and (max-width: 955px) {
+        padding-right: 0;
+    }
+}
+
+.title--adress{
+    @media screen and (max-width: 1000px) {
+        padding-right: 224px;
+    }
+    @media screen and (max-width: 955px) {
+        padding-right: 0;
+    }
+}
+
+.title--social{
+    padding-right: 0;
+}
+
+.footer__contact_value{
+    max-width: 266px;
+    width: 100%;
+    font-size: var(--text-style-18-font-size);
+    @media screen and (max-width: 1000px) {
+        font-size: var(--text-style-16-font-size);
+        max-width: 264px;
+    }
+
+    
+}
+
+.social__item{
+    &:hover{
+        transition: all .5s ease;
+        .footer__social-icon{
+            fill: #AFAFAF;
+            transition: all .5s ease;
+        }
+    }
+    
 }

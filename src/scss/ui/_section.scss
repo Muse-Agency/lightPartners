@@ -58,6 +58,11 @@
 }
 .section__manufacturer_link {
     font-size: var(--text-style-24-font-size);
+    transition: all .2s ease;
+    &:hover{
+        transition: all .2s ease;
+        text-decoration: underline;
+    }
 }
 .section__picture {
     margin-top: 60px;
@@ -90,7 +95,7 @@
     // width: 40%;
     width: 100%;
     max-width: 558px;
-    font-family: var(--header-font);
+    font-family: var(--body-font);
     @media screen and (max-width: 768px) {
         margin-top: 30px;
         font-size: var(--text-style-16-font-size);
